@@ -1,0 +1,85 @@
+<script setup>
+
+</script>
+
+<template>
+    <section  class="contain">
+        <div>
+            <h2>Как доехать до нас ?</h2>
+            <span>
+                <img src="/map.png" alt="">
+            </span>
+            <div>
+                <h3>Автомобиль</h3>
+                <p>Бесплатная парковка</p>
+                <h3>Такси</h3>
+                <p>Яндекс такси, Uber</p>
+                <h3>Автобус</h3>
+                <p>Маршурут 128, Центральный стадион-Конечная</p>
+            </div>
+            <h3>Адресс</h3>
+            <div>
+                <h3>г. Бейскайнар</h3>
+                <p>ул.Октябрьская, д.492 ш</p>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style scoped>
+section{
+  /* padding: 0 209px 0 348px; */
+}
+section>div{
+    position: relative;
+    padding: 0 55% 0 0;
+    margin: 100px 0 130px;
+}
+section>div>span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+section>div>span>img{
+    height: 553px;
+    width: 100%;
+    /* width: 740px; */
+    border-radius: 10px;
+}
+h2{
+    color: #585858;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+h3{
+    color: #585858;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 48px 0 0;
+}
+section>div>div>h3{
+    color: #FFB100;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+p{
+    color: #585858;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+}
+p::after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #8E8E8E;
+    margin-top: 8px;
+}
+</style>

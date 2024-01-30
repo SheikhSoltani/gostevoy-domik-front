@@ -4,6 +4,8 @@ import Slider from '@components/Slider.vue'
 import OurServices from '@components/OurServices.vue'
 import Reviews from '@components/Reviews.vue'
 import Banner from '@components/Banner.vue'
+import Map from '@components/Map.vue'
+import Contacts from '@components/Contacts.vue'
 
 import { ref } from 'vue';
 const array = ref([
@@ -26,11 +28,8 @@ const array = ref([
         <OurServices/>
         <Reviews/>
         <Banner/>
-        <AboutUs/>
-        <AboutUs/>
-        <AboutUs/>
-        <AboutUs/>
-        <AboutUs/>
+        <Map/>
+        <Contacts/>
     </section>
 </template>
 
@@ -39,6 +38,7 @@ const array = ref([
 #app>section{
     background: #fff;
     margin-top: 700px;
+    padding-bottom: 100px;
     position: relative;
 }
 img{
