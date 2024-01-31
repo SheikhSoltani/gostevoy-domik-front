@@ -82,4 +82,32 @@ p::after{
     background: #8E8E8E;
     margin-top: 8px;
 }
+
+@media (max-width: 600px) {
+    section>div>span{
+        position:static;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+    section>div{
+        padding: 0;
+        margin: 44px 0;
+    }
+    h2{
+        font-size: 24px;
+        margin-bottom: 26px;
+    }
+    h3{
+        font-size: 24px;
+        margin: 24px 0 0;
+    }
+    section>div>div>h3{
+        font-size: 24px;
+        margin: 16px 0;
+    }
+    p{
+        font-size: 14px;
+    }
+}
 </style>

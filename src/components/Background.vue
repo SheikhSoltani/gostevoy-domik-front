@@ -45,4 +45,15 @@ button{
     text-align: left;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    section{
+        top: 50px;
+        min-height: 400px;
+    }
+    h1{
+        width: 90%;
+        margin-bottom: 36px;
+    }
+}
 </style>

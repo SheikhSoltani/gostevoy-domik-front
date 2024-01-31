@@ -47,4 +47,13 @@ img{
     width: 100dvw;
     max-width: 100%;
 }
+@media (max-width: 600px) {
+    #app>section{
+        margin-top: 400px;
+        padding-bottom: 100px;
+    }
+    img{
+        top:-18px;
+    }
+}
 </style>

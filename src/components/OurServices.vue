@@ -126,4 +126,13 @@ section>div>div>p{
     font-weight: 500;
     margin: 16px 0 32px;
 }
+@media (max-width: 600px) {
+    section>div{
+        flex-direction: column;
+    }
+    section>div>div>div{
+        height: 300px;
+        width: 342px;
+    }
+}
 </style>

@@ -61,4 +61,20 @@ section>div>div>div>div{
     width: 262px;
     margin: 0 7px;
 }
+@media (max-width: 600px) {
+    
+    h3{
+        padding: 7px 100px;
+        font-size: 16px;
+    }
+    section>div>div{
+        width: 229px;
+    }
+    section>div>div>div{
+        left: 0px;
+    }
+    section>div>div>div>div{
+        width: 229px;
+    }
+}
 </style>

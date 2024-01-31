@@ -67,6 +67,9 @@
 </template>
 
 <style scoped>
+#mobile{
+    display: none;
+}
 section{
     display: flex;
     padding-top: 50px;
@@ -129,5 +132,13 @@ section>div>div>img{
 }
 section>div>div>a{
     margin: 0 10px 0 0;
+}
+@media (max-width: 600px) {
+    footer{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
 }
 </style>

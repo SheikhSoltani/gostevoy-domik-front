@@ -34,9 +34,16 @@
             </div>
         </section>
     </header>
+    
+    <header id="mobile" :class="{ active: isActive }">
+    
+    </header>
 </template>
 
 <style scoped>
+#mobile{
+    display: none;
+}
 header{
     background: #fff;
     padding-top: 10px;
@@ -92,5 +99,13 @@ header>section>div>a.active::before{
 }
 header>section>div:last-child>a{
     padding: 0 5px;
+}
+@media (max-width: 600px) {
+    header{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
 }
 </style>

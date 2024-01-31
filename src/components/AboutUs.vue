@@ -28,4 +28,14 @@ p{
     letter-spacing: 0em;
     text-align: center;
 }
+@media (max-width: 600px) {
+    section{
+        margin-bottom:36px;
+        padding-top: 24px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
 </style>

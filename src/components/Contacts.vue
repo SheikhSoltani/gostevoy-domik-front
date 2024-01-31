@@ -93,4 +93,31 @@ button{
     padding: 20px 230px;
     border: none;
 }
+@media (max-width: 600px) {
+    untitle{
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    titletwo{
+        font-size: 18px;
+        margin-top: 36px;
+    }
+    number{
+        font-size: 18px;
+        margin: 24px 0 8px;
+    }
+    undernumber{
+        font-size: 18px;
+    }
+    email{
+        font-size: 18px;
+        margin: 15px 0 39px;
+    }
+    button{
+        font-size: 20px;
+        border-radius: 10px;
+        background: #FFB100;
+        padding: 15px 118px;
+    }
+}
 </style>

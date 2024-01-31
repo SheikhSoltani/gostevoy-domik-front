@@ -53,6 +53,15 @@ section>div>div::after {
     left: 50%; bottom: -60px; /* Положение треугольника */
     border: 40px solid transparent; /* Прозрачные границы */
     border-top: 20px solid #FFB100; /* Добавляем треугольник */
-   }
+}
 
+@media (max-width: 600px) {
+    section>div>div{
+        width: 343px;
+        padding: 18px 13px;
+        font-size: 8px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+}
 </style>
