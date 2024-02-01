@@ -1,14 +1,55 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 const { text,arr } = defineProps(['text','arr']);
+
+const isMobile = ref(false);
+const moveValue =ref(0)
+const move = ref('0px'); 
+const count = ref(0)
+const rightButton = () => {
+    if(isMobile.value){
+        moveValue.value -= 243;
+        if(6*-243>=moveValue.value){
+            moveValue.value=0;
+        }
+        move.value=moveValue.value+'px'; 
+    }else{
+        moveValue.value -= 276;
+        if((arr.length-3)*-276>=moveValue.value){
+            moveValue.value=0;
+        }
+        move.value=moveValue.value+'px'; 
+    }
+};
+const leftButton = () => {
+    if(isMobile.value){
+        moveValue.value += 243;
+        if(moveValue.value>0)moveValue.value=5*-243;
+        move.value=moveValue.value+'px';
+    }else{
+        moveValue.value += 276;
+        if(moveValue.value>0)moveValue.value=(arr.length-4)*-276;
+        move.value=moveValue.value+'px';
+    }
+};
+onMounted(async () => {
+    isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+    const handleResize = () => {
+        isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+    };
+    onUnmounted(() => {
+        window.removeEventListener('resize', handleResize);
+    });
+});
 </script>
 
 <template>
     <section class="contain">
         <h3>{{ text }}</h3>
         <div>
-            <img src="/LeftButton.svg" alt="">
+            <img src="/LeftButton.svg" alt="" @click="leftButton">
             <div>
-                <div>
+                <div :style="{ left: move }">
                     <div v-for="elem in arr"  :style="{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(${elem.img})`,
                         'background-position': 'center',
                         'background-size': 'cover',
@@ -16,7 +57,7 @@ const { text,arr } = defineProps(['text','arr']);
                     </div>
                 </div>
             </div>
-            <img src="/RightButton.svg" alt="">
+            <img src="/RightButton.svg" alt="" @click="rightButton">
         </div>
     </section>
 </template>
@@ -55,6 +96,7 @@ section>div>div>div{
     position: absolute;
     left: -276px;
     display: flex;
+    transition: left 0.5s ease; 
 }
 section>div>div>div>div{
     height: 278px;
