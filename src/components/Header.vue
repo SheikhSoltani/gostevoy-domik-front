@@ -1,4 +1,10 @@
 <script setup>
+
+import { ref } from 'vue';
+const Active = ref(false);
+const toggle = () => {
+    Active.value=!Active.value
+};
 </script>
 
 <template>
@@ -36,7 +42,36 @@
     </header>
     
     <header id="mobile" :class="{ active: isActive }">
-    
+        <div class="show">
+            <img src="/Logo.svg" alt="">
+            <img v-show="!Active" src="/burger.svg" alt="" @click="toggle">
+            <img v-show="Active" src="/close.svg" alt="" @click="toggle">
+        </div>
+        <div  v-show="Active">
+            <a class="active" href="">ГЛАВНАЯ</a>
+            <a href="">О НАС</a>
+            <a href="">НОМЕРА И ЦЕНЫ</a>
+            <a href="">КАК ДОБРАТЬСЯ</a>
+            <a href="">КОНТАКТ</a>
+            <div>
+                <img src="/home.svg" alt="img">
+                <p>Алматау, ул.Октябрьская, д.492</p>
+            </div>
+            <div>
+                <img src="/phone.svg" alt="img">
+                <p>8 (762) 279-56-89</p>
+            </div>
+            <div>
+                <img src="/phone.svg" alt="img">
+                <p>8 (762) 279-56-89</p>
+            </div>
+            <div>
+                <a href=""><img src="/inst.svg" alt="img"></a>
+                <a href=""><img src="/whatsapp.svg" alt="img"></a>
+                <a href=""><img src="/telegram.svg" alt="img"></a>
+                <a href=""><img src="/facebook.svg" alt="img"></a>
+            </div>
+        </div>
     </header>
 </template>
 
@@ -52,6 +87,7 @@ header{
     top: 0;
     left: 0;
     width: 100dvw;
+    z-index: 2;
 }
 header>section{
     display: flex;
@@ -100,12 +136,70 @@ header>section>div>a.active::before{
 header>section>div:last-child>a{
     padding: 0 5px;
 }
+@media  (min-width: 1281px) and (max-width: 1441px) {
+    header>section>img{
+        width: 146px;
+    }
+    header>section>div>img{
+        padding-right: 7px;
+        height: 10px;
+    }
+    header>section>div>a{
+        font-size: 9px;
+        padding: 0 7px;
+    }
+    header>section>div>p{
+        font-size: 9px;
+    }
+    header>section>div>a>img{
+        width: 16px;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1280px) {
+    header>section>img{
+        width: 146px;
+    }
+    header>section>div>a{
+        font-size: 9px;
+        padding: 0 7px;
+    }
+    header>section>div>img{
+        padding-right: 7px;
+        height: 10px;
+    }
+    header>section>div>a{
+        font-size: 9px;
+    }
+    header>section>div>p{
+        font-size: 9px;
+    }
+    header>section>div>a>img{
+        width: 16px;
+    }
+}
 @media (max-width: 600px) {
     header{
         display: none;
     }
     #mobile{
         display: block;
+    }
+    #mobile>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #mobile>div>div{
+        display: flex;
+    }
+    #mobile>div.show{
+        justify-content: space-between;
+        padding: 0 16px;
+        flex-direction: row;
+    }
+    .show>img:first-child{
+        width: 75px;
     }
 }
 </style>

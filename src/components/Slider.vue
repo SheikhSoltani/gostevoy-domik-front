@@ -3,7 +3,10 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const { text,arr } = defineProps(['text','arr']);
 
 const isMobile = ref(false);
+const isLaptop = ref(false);
+const isTablet = ref(false);
 const moveValue =ref(0)
+const blockWidth =ref(276)
 const move = ref('0px'); 
 const count = ref(0)
 const rightButton = () => {
@@ -14,8 +17,8 @@ const rightButton = () => {
         }
         move.value=moveValue.value+'px'; 
     }else{
-        moveValue.value -= 276;
-        if((arr.length-3)*-276>=moveValue.value){
+        moveValue.value -= blockWidth.value;
+        if((arr.length-3)*-blockWidth.value>=moveValue.value){
             moveValue.value=0;
         }
         move.value=moveValue.value+'px'; 
@@ -27,16 +30,26 @@ const leftButton = () => {
         if(moveValue.value>0)moveValue.value=5*-243;
         move.value=moveValue.value+'px';
     }else{
-        moveValue.value += 276;
-        if(moveValue.value>0)moveValue.value=(arr.length-4)*-276;
+        moveValue.value += blockWidth.value;
+        if(moveValue.value>0)moveValue.value=(arr.length-4)*-blockWidth.value;
         move.value=moveValue.value+'px';
     }
 };
 onMounted(async () => {
     isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+    isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
+    isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     const handleResize = () => {
         isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+        isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
+        isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     };
+    if(isLaptop.value){
+         blockWidth.value =223
+    }
+    if(isTablet.value){
+         blockWidth.value =201
+    }
     onUnmounted(() => {
         window.removeEventListener('resize', handleResize);
     });
@@ -102,6 +115,30 @@ section>div>div>div>div{
     height: 278px;
     width: 262px;
     margin: 0 7px;
+}
+@media  (min-width: 1281px) and (max-width: 1441px) {
+    
+    section>div>div{
+        width: 892px;
+        height: 226px;
+    }
+    section>div>div>div>div{
+        width: 213px;
+        height: 226px;
+        margin: 0 5px;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1280px) {
+    
+    section>div>div{
+        width: 804px;
+        height: 203px;
+    }
+    section>div>div>div>div{
+        width: 191px;
+        height: 203px;
+        margin: 0 5px;
+    }
 }
 @media (max-width: 600px) {
     

@@ -1,5 +1,24 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+const { text,arr } = defineProps(['text','arr']);
 
+const isMobile = ref(false);
+const height = ref(552);
+const width = ref(636);
+
+onMounted(async () => {
+    isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+    const handleResize = () => {
+        isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+    };
+    if(isMobile){
+        height.value = 240;
+        width.value = 300;
+    }
+    onUnmounted(() => {
+        window.removeEventListener('resize', handleResize);
+    });
+});
 </script>
 
 <template>
@@ -7,7 +26,7 @@
         <div>
             <h2>Как доехать до нас ?</h2>
             <span>
-                <img src="/map.png" alt="">
+                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A02ad6dbda47c96eb6b6d93c9482b0ffa751cb50ac43815f38286a90e6225fd76&amp;source=constructor" :width="width" :height="height" frameborder="0"></iframe>
             </span>
             <div>
                 <h3>Автомобиль</h3>
@@ -86,9 +105,10 @@ p::after{
 @media (max-width: 600px) {
     section>div>span{
         position:static;
-        top: 0;
-        right: 0;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     section>div{
         padding: 0;

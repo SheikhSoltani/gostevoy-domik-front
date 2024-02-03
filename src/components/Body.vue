@@ -37,7 +37,6 @@ const array = ref([
 
 #app>section{
     background: #fff;
-    margin-top: 700px;
     padding-bottom: 100px;
     position: relative;
 }
@@ -47,9 +46,19 @@ img{
     width: 100dvw;
     max-width: 100%;
 }
+
+@media  (min-width: 1281px) and (max-width: 1441px) {
+    img{
+        top:-70px;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1280px) {
+    img{
+        top:-50px;
+    }
+}
 @media (max-width: 600px) {
     #app>section{
-        margin-top: 400px;
         padding-bottom: 100px;
     }
     img{

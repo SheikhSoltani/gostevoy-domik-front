@@ -133,6 +133,56 @@ section>div>div>img{
 section>div>div>a{
     margin: 0 10px 0 0;
 }
+@media  (min-width: 1281px) and (max-width: 1441px) {
+    section>div>img{
+        height: 48px;
+        width: 164px;
+    }
+    section>div>div>img{
+        height: 11px;
+        max-width: 14px;
+    }
+    section>div>div>a>img{
+        height: 18px;
+    }
+    p{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    a{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    h4{
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1280px) {
+    section>div>img{
+        height: 48px;
+        width: 164px;
+    }
+    section>div>div>img{
+        height: 11px;
+        max-width: 14px;
+    }
+    section>div>div>a>img{
+        height: 18px;
+    }
+    p{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    a{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    h4{
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+}
 @media (max-width: 600px) {
     footer{
         display: none;

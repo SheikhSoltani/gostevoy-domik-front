@@ -10,10 +10,7 @@
 
 <style scoped>
 section{
-    position: fixed;
-    top: 100px;
-    left: 0;
-    z-index: -1;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +19,7 @@ section{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 600px;
+    min-height: 800px;
 }
 color{
     color: #FFB100;
@@ -46,9 +43,18 @@ button{
     color: #fff;
 }
 
+@media  (min-width: 1281px) and (max-width: 1441px) {
+    section{
+        min-height: 600px;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1280px) {
+    section{
+        min-height: 600px;
+    }
+}
 @media (max-width: 600px) {
     section{
-        top: 50px;
         min-height: 400px;
     }
     h1{
