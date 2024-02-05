@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <section class="contain">
+    <section id="background" class="contain">
         <h1><color>Высокогорный</color> Отдых с Комфортом</h1>
         <button>Забронировать</button>
     </section>

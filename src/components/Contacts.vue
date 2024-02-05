@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section  class="contain">
+    <section id="contacts" class="contain">
         <h2>Контакты</h2>
         <untitle>Не стесняйтесь обращаться к нам, если у вас возникнут какие-либо вопросы</untitle>
         <titletwo>телефон * WHATSAPP * TELEGRAM</titletwo>

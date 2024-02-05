@@ -1,9 +1,82 @@
 <script setup>
 
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const activeSection = ref(1);
 const Active = ref(false);
+
+const handleScroll = () => {
+    const targetElement = document.getElementById('background');
+    const targetElement2 = document.getElementById('about');
+    const targetElement3 = document.getElementById('services');
+    const targetElement4 = document.getElementById('map');
+    const targetElement5 = document.getElementById('contacts');
+    const rect = targetElement.getBoundingClientRect();
+    const rect2 = targetElement2.getBoundingClientRect();
+    const rect3 = targetElement3.getBoundingClientRect();
+    const rect4 = targetElement4.getBoundingClientRect();
+    const rect5 = targetElement5.getBoundingClientRect();
+  
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+    activeSection.value = 1;
+  }
+  if (rect2.top >= 0 && rect2.bottom <= window.innerHeight) {
+    activeSection.value = 2;
+  }
+  if (rect3.top >= 0 && rect3.bottom <= window.innerHeight) {
+    activeSection.value = 3;
+  }
+  if (rect4.top >= 0 && rect4.bottom <= window.innerHeight) {
+    activeSection.value = 4;
+  }
+  if (rect5.top >= 0 && rect5.bottom <= window.innerHeight) {
+    activeSection.value = 5;
+  }
+  
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+
 const toggle = () => {
     Active.value=!Active.value
+};
+const scrollTo = (index) => {
+    const targetElement = document.getElementById('background');
+    const targetElement2 = document.getElementById('about');
+    const targetElement3 = document.getElementById('services');
+    const targetElement4 = document.getElementById('map');
+    const targetElement5 = document.getElementById('contacts');
+    if(index===1){
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: "start" });
+        }
+    }
+    if(index===2){
+        if (targetElement2) {
+            targetElement2.scrollIntoView({ behavior: 'smooth', block: "center" });
+        }
+    }
+    if(index===3){
+        if (targetElement3) {
+            targetElement3.scrollIntoView({ behavior: 'smooth', block: "center" });
+        }
+    }
+    if(index===4){
+        if (targetElement4) {
+            targetElement4.scrollIntoView({ behavior: 'smooth', block: "center" });
+        }
+    }
+    if(index===5){
+        if (targetElement5) {
+            targetElement5.scrollIntoView({ behavior: 'smooth', block: "end" });
+        }
+    }
 };
 </script>
 
@@ -26,11 +99,11 @@ const toggle = () => {
         <section>
             <img src="/Logo.svg" alt="img">
             <div>
-                <a class="active" href="">ГЛАВНАЯ</a>
-                <a href="">О НАС</a>
-                <a href="">НОМЕРА И ЦЕНЫ</a>
-                <a href="">КАК ДОБРАТЬСЯ</a>
-                <a href="">КОНТАКТ</a>
+                <a @click="scrollTo(1)" :class="{ active: activeSection === 1 }">ГЛАВНАЯ</a>
+                <a @click="scrollTo(2)" :class="{ active: activeSection === 2 }">О НАС</a>
+                <a @click="scrollTo(3)" :class="{ active: activeSection === 3 }">НОМЕРА И ЦЕНЫ</a>
+                <a @click="scrollTo(4)" :class="{ active: activeSection === 4 }">КАК ДОБРАТЬСЯ</a>
+                <a @click="scrollTo(5)" :class="{ active: activeSection === 5 }">КОНТАКТ</a>
             </div>
             <div>
                 <a href=""><img src="/inst.svg" alt="img"></a>
@@ -76,6 +149,9 @@ const toggle = () => {
 </template>
 
 <style scoped>
+a{
+    cursor: pointer;
+}
 #mobile{
     display: none;
 }

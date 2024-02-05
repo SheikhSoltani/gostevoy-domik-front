@@ -11,7 +11,8 @@ onMounted(async () => {
     const handleResize = () => {
         isMobile.value = window.matchMedia('(max-width: 767px)').matches;
     };
-    if(isMobile){
+    if(isMobile.value){
+    console.log('gh')
         height.value = 240;
         width.value = 300;
     }
@@ -22,7 +23,7 @@ onMounted(async () => {
 </script>
 
 <template>
-    <section  class="contain">
+    <section id="map" class="contain">
         <div>
             <h2>Как доехать до нас ?</h2>
             <span>

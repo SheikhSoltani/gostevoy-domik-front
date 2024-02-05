@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="contain">
+    <section id="services" class="contain">
         <h2>НАШИ НОМЕРА</h2>
         <div>
             <div>
