@@ -82,18 +82,18 @@ const scrollTo = (index) => {
 
 <template>
     <header class="contain">
-        <section>
+        <section class="first">
             <div>
                 <img src="/home.svg" alt="img">
-                <p>Алматау, ул.Октябрьская, д.492</p>
+                <a href="https://go.2gis.com/y24fe">Алматау 9</a>
             </div>
             <div>
                 <img src="/massage.svg" alt="img">
-                <p>gostevoydomik@gmail,com</p>
+                <p>gostevoydomik@gmail.com</p>
             </div>
             <div>
                 <img src="/phone.svg" alt="img">
-                <p>8 (762) 279-56-89</p>
+                <p>+7 (705) 447-26-36</p>
             </div>
         </section>
         <section>
@@ -103,13 +103,13 @@ const scrollTo = (index) => {
                 <a @click="scrollTo(2)" :class="{ active: activeSection === 2 }">О НАС</a>
                 <a @click="scrollTo(3)" :class="{ active: activeSection === 3 }">НОМЕРА И ЦЕНЫ</a>
                 <a @click="scrollTo(4)" :class="{ active: activeSection === 4 }">КАК ДОБРАТЬСЯ</a>
-                <a @click="scrollTo(5)" :class="{ active: activeSection === 5 }">КОНТАКТ</a>
+                <a @click="scrollTo(5)" :class="{ active: activeSection === 5 }">КОНТАКТЫ</a>
             </div>
             <div>
-                <a href=""><img src="/inst.svg" alt="img"></a>
-                <a href=""><img src="/whatsapp.svg" alt="img"></a>
+                <a href="https://www.instagram.com/gostevoydomik_almatau"><img src="/inst.svg" alt="img"></a>
+                <a href="https://wa.me/77054472636"><img src="/whatsapp.svg" alt="img"></a>
                 <a href=""><img src="/telegram.svg" alt="img"></a>
-                <a href=""><img src="/facebook.svg" alt="img"></a>
+                <a href="https://www.facebook.com/profile.php?id=100066717135301"><img src="/facebook.svg" alt="img"></a>
             </div>
         </section>
     </header>
@@ -211,6 +211,14 @@ header>section>div>a.active::before{
 }
 header>section>div:last-child>a{
     padding: 0 5px;
+}
+.first>div>a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    color: #1E1E1E;
+    padding: 0;
 }
 @media  (min-width: 1281px) and (max-width: 1441px) {
     header>section>img{

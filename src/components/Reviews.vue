@@ -30,7 +30,7 @@ onMounted(async () => {
         isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     };
     if(isLaptop.value){
-         blockWidth.value =1210;
+         blockWidth.value =1100;
     }
     if(isTablet.value){
          blockWidth.value =940;
@@ -132,7 +132,7 @@ section>div>div>div::after {
         margin: 60px 100px 0;
     }
     section>div{
-        width: 1210px;
+        width: 1100px;
     }
 }
 @media  (min-width: 601px) and (max-width: 1280px) {

@@ -1,10 +1,17 @@
 <script setup>
+
+const scrollTo = () => {
+    const targetElement3 = document.getElementById('services');
+    if (targetElement3) {
+        targetElement3.scrollIntoView({ behavior: 'smooth', block: "center" });
+    }
+};
 </script>
 
 <template>
     <section id="background" class="contain">
         <h1><color>Высокогорный</color> Отдых с Комфортом</h1>
-        <button>Забронировать</button>
+        <button @click="scrollTo">Забронировать</button>
     </section>
 </template>
 

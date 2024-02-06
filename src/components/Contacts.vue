@@ -8,18 +8,21 @@
         <untitle>Не стесняйтесь обращаться к нам, если у вас возникнут какие-либо вопросы</untitle>
         <titletwo>телефон * WHATSAPP * TELEGRAM</titletwo>
         <div>
-            <number>+8 778 345 56 44</number>
-            <undernumber>Марийя романовна</undernumber>
-            <number>+8 778 345 56 44</number>
-            <undernumber>Роман</undernumber>
+            <number>+7 (701) 715-04-28</number>
+            <undernumber>Мария МИТРОФАНОВна</undernumber>
+            <number>+7 (705) 447-26-36</number>
+            <undernumber>Роман МИТРОФАНОВ</undernumber>
         </div>
         <titletwo>E-mail</titletwo>
-        <email>Gostevoydomik@gamil.com</email>
-        <button>Связаться</button>
+        <email>Gostevoydomik@gmail.com</email>
+        <a href="https://wa.me/77054472636">Связаться</a>
     </section>
 </template>
 
 <style scoped>
+h2{
+    color: #FFB100;
+}
 section{
     display: flex;
     flex-direction: column;
@@ -83,7 +86,7 @@ email{
     text-transform: uppercase;
     margin: 29px 0 58px;
 }
-button{
+a{
     color: #FFF;
     font-family: Inter;
     font-size: 24px;
@@ -92,6 +95,7 @@ button{
     background: #FFB100;
     padding: 20px 230px;
     border: none;
+    text-decoration: none;
 }
 @media (max-width: 600px) {
     untitle{

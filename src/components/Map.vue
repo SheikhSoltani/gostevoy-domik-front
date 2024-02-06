@@ -3,14 +3,30 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const { text,arr } = defineProps(['text','arr']);
 
 const isMobile = ref(false);
+const isLaptop = ref(false);
+const isTablet = ref(false);
 const height = ref(552);
 const width = ref(636);
 
 onMounted(async () => {
     isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+    isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
+    isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     const handleResize = () => {
         isMobile.value = window.matchMedia('(max-width: 767px)').matches;
+        isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
+        isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     };
+    if(isLaptop.value){
+    console.log('gh')
+        height.value = 403;
+        width.value = 542;
+    }
+    if(isTablet.value){
+    console.log('gh')
+        height.value = 603;
+        width.value = 380;
+    }
     if(isMobile.value){
     console.log('gh')
         height.value = 240;
@@ -35,12 +51,12 @@ onMounted(async () => {
                 <h3>Такси</h3>
                 <p>Яндекс такси, Uber</p>
                 <h3>Автобус</h3>
-                <p>Маршурут 128, Центральный стадион-Конечная</p>
+                <p>Маршурут 209</p>
             </div>
-            <h3>Адресс</h3>
+            <h3>АДРЕС</h3>
             <div>
-                <h3>г. Бейскайнар</h3>
-                <p>ул.Октябрьская, д.492 ш</p>
+                <h3>г. Алматы</h3>
+                <p>Алматау 9</p>
             </div>
         </div>
     </section>

@@ -7,7 +7,7 @@
         <h2>НАШИ НОМЕРА</h2>
         <div>
             <div>
-                <div  :style="{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('/background.jpg')`,
+                <div  :style="{background: `url('/service.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -20,11 +20,11 @@
                     </div>
                 </div>
                 <p>300000 KZT за сутки</p>
-                <button>Забронировать</button>
+                <a href="https://wa.me/77054472636?text=Здравствуйте">Забронировать</a>
             </div>
             
             <div>
-                <div  :style="{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('/background.jpg')`,
+                <div  :style="{background: `url('/service.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -37,11 +37,11 @@
                     </div>
                 </div>
                 <p>400000 KZT за сутки</p>
-                <button>Забронировать</button>
+                <a href="https://wa.me/77054472636">Забронировать</a>
             </div>
             
             <div>
-                <div  :style="{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('/background.jpg')`,
+                <div  :style="{background: `url('/service.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <p>500000 KZT за сутки</p>
-                <button>Забронировать</button>
+                <a href="https://wa.me/77054472636">Забронировать</a>
             </div>
             
         </div>
@@ -72,11 +72,12 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 60px;
 }
 section>div{
     display: flex;
 }
-button{
+a{
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
@@ -85,6 +86,7 @@ button{
     border-radius: 10px;
     background: #FFB100;
     border: none;
+    text-decoration: none;
 }
 h3{
     color: #fff;

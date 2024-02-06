@@ -1,5 +1,6 @@
 <script setup>
 
+const currentYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -8,23 +9,23 @@
             <div>
                 <img src="/logo_footer.svg" alt="">
                 <p>
-                    Сайт сделан веб студией
-                    <a href="">Digital Solution.kz</a>
+                    Сайт сделан веб студией<br/>
+                    <a href="https://digital-solution.kz">Digital Solution.kz</a>
                 </p>
             </div>
             <div>
                 <h4>Контакты</h4>
                 <div>
                     <img src="/phone_footer.svg" alt="">
-                    <p>8 (778) 279-56-89</p>
+                    <p>+7 (705) 447-26-36</p>
                 </div>
                 <div>
                     <img src="/home_footer.svg" alt="">
-                    <p>АлматаУ</p>
+                    <p>Алматы</p>
                 </div>
                 <div>
                     <img src="/mark_footer.svg" alt="">
-                    <p>ул.Октябрьская, д.492</p>
+                    <p>Алматау 9</p>
                 </div>
                 <div>
                     <img src="/mail_footer.svg" alt="">
@@ -37,23 +38,20 @@
                 <p>Выезд: до 12:00</p>
                 <p>Бесплатный WI-FI</p>
                 <p>Бесплатная парковка</p>
-                <a href="">О нас</a>
-                <a href="">Условия бронирования</a>
-                <a href="">Политика конфиденциальности</a>
             </div>
             <div>
                 <h4>Следите за нами в социальных  сетях</h4>
                 <div>
-                    <a href="">
+                    <a href="https://www.facebook.com/profile.php?id=100066717135301">
                         <img src="/facebook_footer.svg" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/gostevoydomik_almatau">
                         <img src="/inst_footer.svg" alt="">
                     </a>
                     <a href="">
                         <img src="/telegram_footer.svg" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://wa.me/77054472636">
                         <img src="/whatsapp_footer.svg" alt="">
                     </a>
                 </div>
@@ -61,7 +59,7 @@
         </section>
         <section class="contain"></section>
         <section class="contain">
-            <p>© 2008–2023 – Gostevoydomik</p>
+            <p>© 2008–{{ currentYear }} – Gostevoydomik</p>
         </section>
     </footer>
 </template>
@@ -87,8 +85,10 @@ a{
     color: #FFF;
     font-family: Montserrat;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 6px;
+    cursor: pointer;
+    text-decoration: underline;
 }
 h4{
     color: #FFF;

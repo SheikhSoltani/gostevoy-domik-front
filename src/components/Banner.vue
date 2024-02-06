@@ -7,7 +7,7 @@
         <div>
             <h2>Следите за новостями в нашем инстаграм</h2>
             <p>Подпишитесь на наши рассылки, чтобы быть в курсе действующих акций и скидок</p>
-            <button>Подписаться</button>
+            <a href="https://www.instagram.com/gostevoydomik_almatau">Подписаться</a>
         </div>
         <img src="/smartphone.png" alt="">
     </section>
@@ -38,7 +38,7 @@ p{
     font-weight: 500;
     margin: 24px 0 44px;
 }
-button{
+a{
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
@@ -47,6 +47,7 @@ button{
     border-radius: 10px;
     background: #FFB100;
     border: none;
+    text-decoration: none;
 }
 section>img{
     position: absolute;
