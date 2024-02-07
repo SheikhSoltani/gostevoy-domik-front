@@ -10,11 +10,11 @@ import Contacts from '@components/Contacts.vue'
 import { ref } from 'vue';
 const array = ref([
   { img: '/background.jpg' },
+  { img: '/service.png' },
   { img: '/background.jpg' },
+  { img: '/service.png' },
   { img: '/background.jpg' },
-  { img: '/background.jpg' },
-  { img: '/background.jpg' },
-  { img: '/background.jpg' }
+  { img: '/smartphone.png' },
 ]);
 </script>
 

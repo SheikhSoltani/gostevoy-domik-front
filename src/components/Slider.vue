@@ -1,10 +1,11 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
 const { text,arr } = defineProps(['text','arr']);
 
 const isMobile = ref(false);
 const isLaptop = ref(false);
 const isTablet = ref(false);
+const isShow = ref(false);
 const moveValue =ref(0)
 const blockWidth =ref(276)
 const move = ref('0px'); 
@@ -35,6 +36,29 @@ const leftButton = () => {
         move.value=moveValue.value+'px';
     }
 };
+
+const rightButton2 = () => {
+    if (count.value < arr.length - 1) {
+        count.value += 1;
+    } else {
+        count.value = 0;
+    }
+};
+const leftButton2 = () => {
+    if (count.value > 0) {
+        count.value -= 1;
+    } else {
+        count.value = arr.length - 1;
+    }
+};
+const imageClick = (index) => {
+    isShow.value=true;
+    count.value=index;
+};
+const imageClose = (index) => {
+    isShow.value=false;
+};
+
 onMounted(async () => {
     isMobile.value = window.matchMedia('(max-width: 767px)').matches;
     isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
@@ -54,6 +78,20 @@ onMounted(async () => {
         window.removeEventListener('resize', handleResize);
     });
 });
+const disableScroll = () => {
+    if (isShow.value) {
+        // Предотвращаем прокрутку страницы при открытом isShow
+        document.body.style.overflow = 'hidden';
+    } else {
+        // Восстанавливаем прокрутку страницы при закрытом isShow
+        document.body.style.overflow = '';
+    }
+};
+
+// Слушаем изменения переменной isShow и вызываем соответствующую функцию для управления прокруткой
+watchEffect(() => {
+    disableScroll();
+});
 </script>
 
 <template>
@@ -63,19 +101,58 @@ onMounted(async () => {
             <img src="/LeftButton.svg" alt="" @click="leftButton">
             <div>
                 <div :style="{ left: move }">
-                    <div v-for="elem in arr"  :style="{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(${elem.img})`,
+                    <div v-for="(elem,index) in arr"  :style="{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(${elem.img})`,
                         'background-position': 'center',
                         'background-size': 'cover',
-                        'background-repeat': 'no-repeat',}">
+                        'background-repeat': 'no-repeat',}" @click="imageClick(index)" :class="{ 'animated-div': animate }">
                     </div>
                 </div>
             </div>
             <img src="/RightButton.svg" alt="" @click="rightButton">
         </div>
     </section>
+    <div v-show="isShow" class="big_image" >
+        <img src="/LeftButton.svg" alt="" @click="leftButton2">
+        <div :style="{background: ` url(${arr[count].img})`,
+        'background-position': 'center',
+        'background-size': 'contain',
+        'background-repeat': 'no-repeat', }">
+        </div>
+        <img src="/RightButton.svg" alt="" @click="rightButton2">
+        <div class="background" @click="imageClose"></div>
+    </div>
 </template>
 
 <style scoped>
+.big_image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100dvw;
+    background: rgba(0,0,0,0.9);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big_image>div{
+    z-index: 52;
+    height:80%;
+}
+.big_image>img{
+    z-index: 52;
+    height: 15%;
+    cursor: pointer;
+}
+.big_image>div.background{
+    z-index: 51;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100dvw;
+}
 h3{
     padding: 12px 150px;
     background: #FFB100;
