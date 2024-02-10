@@ -199,6 +199,7 @@ section>div>div>div>div>div{
     margin-top: 50%;
     width: 100%;
     height: 50%;
+    padding: 0 10%;
     background: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;

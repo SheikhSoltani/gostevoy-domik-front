@@ -89,7 +89,7 @@ const scrollTo = (index) => {
             </div>
             <div>
                 <img src="/massage.svg" alt="img">
-                <p>gostevoydomik@gmail.com</p>
+                <p>roma.mitrofanov8787@gmail.com</p>
             </div>
             <div>
                 <img src="/phone.svg" alt="img">
@@ -131,8 +131,8 @@ const scrollTo = (index) => {
                 <p>Алматау, ул.Октябрьская, д.492</p>
             </div>
             <div>
-                <img src="/phone.svg" alt="img">
-                <p>8 (762) 279-56-89</p>
+                <img src="/massage.svg" alt="img">
+                <p>roma.mitrofanov8787@gmail.com</p>
             </div>
             <div>
                 <img src="/phone.svg" alt="img">

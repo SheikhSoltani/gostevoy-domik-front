@@ -12,17 +12,33 @@ import Contacts from '@components/Contacts.vue'
 import { ref } from 'vue';
 const array = ref([
   { img: '/background.jpg' },
-  { img: '/service.png' },
-  { img: '/background.jpg' },
-  { img: '/service.png' },
+  { img: '/image2.png' },
+  { img: '/image3.png' },
+  { img: '/image4.png' },
   { img: '/background.jpg' },
   { img: '/smartphone.png' },
 ]);
 const array2 = ref([
-  { img: '/background.jpg',text:'Горнолыжный курорт Pioner' },
-  { img: '/service.png',text:'Горнолыжный курорт Pioner' },
-  { img: '/background.jpg',text:'Горнолыжный курорт Pioner' },
-  { img: '/service.png',text:'Горнолыжный курорт Pioner' },
+  { img: '/image5.png' },
+  { img: '/image6.png' },
+  { img: '/image7.png' },
+  { img: '/image8.png' },
+  { img: '/background.jpg' },
+  { img: '/smartphone.png' },
+]);
+const array3 = ref([
+  { img: '/image9.png' },
+  { img: '/image10.jpg' },
+  { img: '/image11.jpg' },
+  { img: '/image12.jpg' },
+  { img: '/background.jpg' },
+  { img: '/smartphone.png' },
+]);
+const array4 = ref([
+  { img: '/attractions.jpg',text:'Горнолыжный курорт Pioner' },
+  { img: '/attractions2.jpg',text:'Горнолыжный курорт Лесная сказка' },
+  { img: '/attractions3.png',text:'Бутаковский водопад' },
+  { img: '/attractions4.jpg',text:'Пик фурманова' },
   { img: '/background.jpg',text:'Горнолыжный курорт Pioner' },
   { img: '/smartphone.png',text:'Горнолыжный курорт Pioner' },
 ]);
@@ -33,9 +49,9 @@ const array2 = ref([
         <img src="/wave.svg" alt="">
         <AboutUs/>
         <Slider :arr="array" text="Номера"/>
-        <Slider :arr="array" text="Терасса"/>
-        <Slider :arr="array" text="Сауна"/>
-        <TextSlider :arr="array2" text="Достопримечательности"/>
+        <Slider :arr="array2" text="Терасса"/>
+        <Slider :arr="array3" text="Сауна"/>
+        <TextSlider :arr="array4" text="Достопримечательности"/>
         <OurServices/>
         <WhatWeHave/>
         <Reviews/>
@@ -49,6 +65,7 @@ const array2 = ref([
 
 #app>section{
     background: #fff;
+    padding: 10px 0 0;
     padding-bottom: 100px;
     position: relative;
 }

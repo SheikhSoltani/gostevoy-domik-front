@@ -82,7 +82,7 @@ const currentYear = new Date().getFullYear();
                         </div>
                         <div>
                             <img src="/mail_footer.svg" alt="">
-                            <p>Gostevoydomik@gaml.com</p>
+                            <p>roma.mitrofanov8787@gmail.com</p>
                         </div>
                     </div>
                     <p>
