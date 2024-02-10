@@ -17,11 +17,12 @@
 div{
     padding: 100px 0;
     width: 55%;
+    margin: 0 5% 0 0;
 }
 section{
     background: #F0F4F8;
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 h2{
     color:  #2F2F2F;
@@ -50,11 +51,9 @@ a{
     text-decoration: none;
 }
 section>img{
-    position: absolute;
-    width: 958px;
-    height: 958px;
-    top: -100px;
-    right: 7%;
+    width: 400px;
+    height: 450px;
+    margin: 30px 0 0;
 }
 @media  (min-width: 1281px) and (max-width: 1441px) {
     div{
@@ -67,10 +66,9 @@ section>img{
         font-size: 16px;
     }
     section>img{
-        width: 533px;
-        height: 533px;
-        top: 100px;
-        right: 7%;
+        width: 300px;
+        height: 350px;
+        margin: 30px 0 0;
     }
 }
 @media  (min-width: 601px) and (max-width: 1280px) {
@@ -84,10 +82,25 @@ section>img{
         font-size: 16px;
     }
     section>img{
-        width: 533px;
-        height: 533px;
-        top: 100px;
-        right: 7%;
+        width: 300px;
+        height: 350px;
+        margin: calc(70% - 340px) 0 0;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1000px) {
+    div{
+        padding: 80px 0;
+    }
+    h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 16px;
+    }
+    section>img{
+        width: 300px;
+        height: 350px;
+        margin: calc(70% - 270px) 0 0;
     }
 }
 @media (max-width: 600px) {
@@ -101,17 +114,39 @@ section>img{
         margin: 12px 0 12px;
     }
     section>img{
-        position: absolute;
-        width: 292px;
-        height: 292px;
-        top: 80px;
-        right: -18vw;
+        width: 180px;
+        height: 180px;
+        margin: calc(70% - 160px) 0 0;
+    }
+    div{
+        padding: 60px 0 40px;
+    }
+    a{
+        font-size: 7px;
+        padding: 7px 17px;
+        border-radius: 3px;
+    }
+}
+@media (max-width: 321px) {
+    h2{
+        font-size: 18px;
+    }
+    p{
+        width: 80%;
+        font-size: 8px;
+        font-weight: 500;
+        margin: 12px 0 12px;
+    }
+    section>img{
+        width: 130px;
+        height: 130px;
+        margin: calc(100% - 120px) 0 0;
     }
     div{
         padding: 60px 0 80px;
         width: 70%;
     }
-    button{
+    a{
         font-size: 7px;
         padding: 7px 17px;
         border-radius: 3px;

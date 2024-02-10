@@ -121,11 +121,11 @@ const scrollTo = (index) => {
             <img v-show="Active" src="/close.svg" alt="" @click="toggle">
         </div>
         <div  v-show="Active">
-            <a class="active" href="">ГЛАВНАЯ</a>
-            <a href="">О НАС</a>
-            <a href="">НОМЕРА И ЦЕНЫ</a>
-            <a href="">КАК ДОБРАТЬСЯ</a>
-            <a href="">КОНТАКТ</a>
+            <a @click="scrollTo(1)">ГЛАВНАЯ</a>
+            <a @click="scrollTo(2)">О НАС</a>
+            <a @click="scrollTo(3)">НОМЕРА И ЦЕНЫ</a>
+            <a @click="scrollTo(4)">КАК ДОБРАТЬСЯ</a>
+            <a @click="scrollTo(5)">КОНТАКТ</a>
             <div>
                 <img src="/home.svg" alt="img">
                 <p>Алматау, ул.Октябрьская, д.492</p>
@@ -139,10 +139,10 @@ const scrollTo = (index) => {
                 <p>8 (762) 279-56-89</p>
             </div>
             <div>
-                <a href=""><img src="/inst.svg" alt="img"></a>
-                <a href=""><img src="/whatsapp.svg" alt="img"></a>
+                <a href="https://www.instagram.com/gostevoydomik_almatau"><img src="/inst.svg" alt="img"></a>
+                <a href="https://wa.me/77054472636"><img src="/whatsapp.svg" alt="img"></a>
                 <a href=""><img src="/telegram.svg" alt="img"></a>
-                <a href=""><img src="/facebook.svg" alt="img"></a>
+                <a href="https://www.facebook.com/profile.php?id=100066717135301"><img src="/facebook.svg" alt="img"></a>
             </div>
         </div>
     </header>
@@ -241,10 +241,10 @@ header>section>div:last-child>a{
 }
 @media  (min-width: 601px) and (max-width: 1280px) {
     header>section>img{
-        width: 146px;
+        width: 95px;
     }
     header>section>div>a{
-        font-size: 9px;
+        font-size: 6px;
         padding: 0 7px;
     }
     header>section>div>img{
@@ -252,13 +252,16 @@ header>section>div:last-child>a{
         height: 10px;
     }
     header>section>div>a{
-        font-size: 9px;
+        font-size: 6px;
     }
     header>section>div>p{
-        font-size: 9px;
+        font-size: 6px;
     }
     header>section>div>a>img{
         width: 16px;
+    }
+    .first>div>a{
+        font-size: 6px;
     }
 }
 @media (max-width: 600px) {
@@ -273,6 +276,7 @@ header>section>div:last-child>a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 10px 0 0;
     }
     #mobile>div>div{
         display: flex;
@@ -281,6 +285,33 @@ header>section>div:last-child>a{
         justify-content: space-between;
         padding: 0 16px;
         flex-direction: row;
+    }
+    #mobile>div>a{
+        margin: 6px 0;
+        color: #1E1E1E;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+
+    }
+    #mobile>div>div{
+        margin: 6px 0;
+        display: flex;
+        align-items: center;
+    }
+    #mobile>div>div>p{
+        margin:0 6px;
+        font-family: Inter;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    #mobile>div>div>a{
+        margin: 0 6px;
+    }
+    #mobile>div>a.active{
+    color: #FFB100;
     }
     .show>img:first-child{
         width: 75px;

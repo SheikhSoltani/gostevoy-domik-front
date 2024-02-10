@@ -12,49 +12,50 @@
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
                     <div>
-                        <h3>2-х местный</h3>
-                        <p>-1 двуспальная кровать или 2 односпальные кровати</p>
-                        <p>-Кондиционер</p>
-                        <p>-Интернет</p>
-                        <p>-Телевизор</p>
+                        <h3>LUXURY</h3>
+                        <h4>50-80 KZT <color>/ 1 Сутки</color></h4>
+                        <p>-От 2 до 4 Персон</p>
+                        <p>-4 Спальных мест</p>
+                        <p>-WI-FI</p>
+                        <p>-Барбекью зона</p>
+                        <p>-Летняя терасса</p>
+                        <a href="https://wa.me/77054472636">Забронировать</a>
                     </div>
                 </div>
-                <p>300000 KZT за сутки</p>
-                <a href="https://wa.me/77054472636?text=Здравствуйте">Забронировать</a>
             </div>
-            
             <div>
                 <div  :style="{background: `url('/service.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
                     <div>
-                        <h3>Семейный</h3>
-                        <p>-1 двуспальная кровать или 2 односпальные кровати</p>
-                        <p>-Кондиционер</p>
-                        <p>-Интернет</p>
-                        <p>-Телевизор</p>
+                        <h3>MEDIUM</h3>
+                        <h4>60-90 KZT <color>/ 1 Сутки</color></h4>
+                        <p>-От 4 до 6 Персон</p>
+                        <p>-6 Спальных мест</p>
+                        <p>-WI-FI</p>
+                        <p>-Барбекью зона</p>
+                        <p>-Летняя терасса</p>
+                        <a href="https://wa.me/77054472636">Забронировать</a>
                     </div>
                 </div>
-                <p>400000 KZT за сутки</p>
-                <a href="https://wa.me/77054472636">Забронировать</a>
             </div>
-            
             <div>
                 <div  :style="{background: `url('/service.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
                     <div>
-                        <h3>Корпоративный</h3>
-                        <p>-1 двуспальная кровать или 2 односпальные кровати</p>
-                        <p>-Кондиционер</p>
-                        <p>-Интернет</p>
-                        <p>-Телевизор</p>
+                        <h3>LARGE</h3>
+                        <h4>150-180 KZT <color>/ 1 Сутки</color></h4>
+                        <p>-От 10 до 12 Персон</p>
+                        <p>-8 Спальных мест</p>
+                        <p>-WI-FI</p>
+                        <p>-Барбекью зона</p>
+                        <p>-Летняя терасса</p>
+                        <a href="https://wa.me/77054472636">Забронировать</a>
                     </div>
                 </div>
-                <p>500000 KZT за сутки</p>
-                <a href="https://wa.me/77054472636">Забронировать</a>
             </div>
             
         </div>
@@ -66,6 +67,19 @@
 h2{
     color: #585858;
     margin-bottom: 30px;
+}
+h4{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+    margin: 2px 10px 20px;
+}
+h4>color{
+    color: #FFB100;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
 }
 section{
     display: flex;
@@ -80,13 +94,16 @@ section>div{
 a{
     color: #FFF;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
-    padding: 15px 25px;
+    padding: 10px 15px;
     border-radius: 10px;
     background: #FFB100;
     border: none;
     text-decoration: none;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
 h3{
     color: #fff;
@@ -97,11 +114,11 @@ h3{
     margin-bottom: 20px;
 }
 section>div>div{
-    margin: 0 10px;
+    margin: 0 25px;
 }
 section>div>div>div{
-    height: 300px;
-    width: 394px;
+    min-height: 400px;
+    width: 374px;
     display: flex;
     align-items: flex-end;
     border-radius: 10px;
@@ -113,6 +130,7 @@ section>div>div>div>div{
     height: 55%;
     width: 100%;
     padding:6px 0 30px;
+    position: relative;
 }
 section>div>div>div>div>p{
     color: #fff;
@@ -136,17 +154,51 @@ section>div>div>p{
 }
 @media  (min-width: 601px) and (max-width: 1280px) {
     section>div>div>div{
-        height: 220px;
-        width: 288px;
+        height: 250px;
+        min-height: 180px;
+        width: 200px;
+    }
+    section>div>div>div>div{
+        height: auto;
+    }
+    h3{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    section>div>div>div>div>p{
+        font-size: 8px;
+        margin: 2px 10px;
+    }
+    a{
+        font-size: 7px;
+        padding: 6px 9px;
+        right: 10px;
+        bottom: 10px;
+    }
+    section>div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section>div>div{
+        margin:0 10px;
     }
 }
 @media (max-width: 600px) {
     section>div{
         flex-direction: column;
+        width: 100%;
+    }
+    section>div>div{
+        margin: 0;
     }
     section>div>div>div{
         height: 300px;
-        width: 342px;
+        width: 90dvw;
+        margin-bottom: 15px;
     }
 }
 </style>

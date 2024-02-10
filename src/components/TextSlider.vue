@@ -105,6 +105,7 @@ watchEffect(() => {
                         'background-position': 'center',
                         'background-size': 'cover',
                         'background-repeat': 'no-repeat',}" @click="imageClick(index)" :class="{ 'animated-div': animate }">
+                        <div>{{ elem.text }}</div>
                     </div>
                 </div>
             </div>
@@ -192,6 +193,21 @@ section>div>div>div>div{
     height: 278px;
     width: 262px;
     margin: 0 7px;
+    display: flex;
+}
+section>div>div>div>div>div{
+    margin-top: 50%;
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
 }
 @media  (min-width: 1281px) and (max-width: 1441px) {
     
@@ -205,6 +221,7 @@ section>div>div>div>div{
         margin: 0 5px;
     }
 }
+
 @media  (min-width: 601px) and (max-width: 1280px) {
     
     section>div>div{
@@ -223,13 +240,8 @@ section>div>div>div>div{
 }
 @media (max-width: 600px) {
     
-    .big_image>img{
-        z-index: 52;
-        height: auto;
-        cursor: pointer;
-    }
     h3{
-        padding: 7px 100px;
+        padding: 7px 10px;
         font-size: 16px;
     }
     section>div{
@@ -244,11 +256,14 @@ section>div>div>div>div{
     section>div>div>div>div{
         width: 229px;
     }
+    section>div>div>div>div>div{
+        padding: 0 15%;
+    }
 }
 @media (max-width: 321px) {
     
     h3{
-        padding: 7px 100px;
+        padding: 7px 10px;
         font-size: 16px;
     }
     section>div{
@@ -263,6 +278,9 @@ section>div>div>div>div{
     }
     section>div>div>div>div{
         width: 229px;
+    }
+    section>div>div>div>div>div{
+        padding: 0 20% 0 5%;
     }
 }
 </style>

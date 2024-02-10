@@ -28,6 +28,12 @@ p{
     letter-spacing: 0em;
     text-align: center;
 }
+@media  (min-width: 601px) and (max-width: 1280px) {
+    p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
 @media (max-width: 600px) {
     section{
         margin-bottom:36px;

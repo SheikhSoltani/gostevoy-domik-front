@@ -56,8 +56,15 @@ button{
     }
 }
 @media  (min-width: 601px) and (max-width: 1280px) {
+    h1{
+        width: 90%;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 80px;
+        color: #fff;
+    }
     section{
-        min-height: 600px;
+        min-height: 500px;
     }
 }
 @media (max-width: 600px) {
@@ -67,6 +74,10 @@ button{
     h1{
         width: 90%;
         margin-bottom: 36px;
+    }
+    button{
+        font-size: 12px;
+        padding: 10px 26px;
     }
 }
 </style>

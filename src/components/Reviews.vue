@@ -33,7 +33,7 @@ onMounted(async () => {
          blockWidth.value =1100;
     }
     if(isTablet.value){
-         blockWidth.value =940;
+         blockWidth.value =740;
     }
     if(isMobile.value){
          blockWidth.value =300;
@@ -137,12 +137,19 @@ section>div>div>div::after {
 }
 @media  (min-width: 601px) and (max-width: 1280px) {
     section>div>div>div{
-        width: 886px;
+        width: 686px;
         margin: 60px 27px 0;
         box-shadow: 0px 2px 20px 0px #FFB10080;
+        font-size: 12px;
     }
     section>div{
-        width: 940px;
+        width: 740px;
+        height: 180px;
+    }
+    .user{
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
     }
 }
 @media (max-width: 600px) {

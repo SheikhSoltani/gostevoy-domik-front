@@ -97,6 +97,89 @@ a{
     border: none;
     text-decoration: none;
 }
+@media  (min-width: 1281px) and (max-width: 1441px) {
+    untitle{
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    titletwo{
+        font-size: 24px;
+        margin-top: 36px;
+    }
+    number{
+        font-size: 25px;
+        margin: 24px 0 8px;
+    }
+    undernumber{
+        font-size: 18px;
+    }
+    email{
+        font-size: 24px;
+        margin: 15px 0 39px;
+    }
+    a{
+        font-size: 20px;
+        border-radius: 10px;
+        background: #FFB100;
+        padding: 15px 100px;
+    }
+  
+}
+@media  (min-width: 1001px) and (max-width: 1280px) {
+    untitle{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+    titletwo{
+        font-size: 30px;
+        margin-top: 36px;
+    }
+    number{
+        font-size: 32px;
+        margin: 24px 0 8px;
+    }
+    undernumber{
+        font-size: 20px;
+    }
+    email{
+        font-size: 32px;
+        margin: 15px 0 39px;
+    }
+    a{
+        font-size: 18px;
+        border-radius: 10px;
+        background: #FFB100;
+        padding: 15px 140px;
+    }
+  
+}
+@media  (min-width: 601px) and (max-width: 1000px) {
+    untitle{
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    titletwo{
+        font-size: 24px;
+        margin-top: 36px;
+    }
+    number{
+        font-size: 25px;
+        margin: 24px 0 8px;
+    }
+    undernumber{
+        font-size: 18px;
+    }
+    email{
+        font-size: 24px;
+        margin: 15px 0 39px;
+    }
+    a{
+        font-size: 20px;
+        border-radius: 10px;
+        background: #FFB100;
+        padding: 15px 100px;
+    }
+}
 @media (max-width: 600px) {
     untitle{
         font-size: 16px;
@@ -117,11 +200,11 @@ a{
         font-size: 18px;
         margin: 15px 0 39px;
     }
-    button{
+    a{
         font-size: 20px;
         border-radius: 10px;
         background: #FFB100;
-        padding: 15px 118px;
+        padding: 15px 90px;
     }
 }
 </style>
