@@ -220,6 +220,9 @@ header>section>div:last-child>a{
     color: #1E1E1E;
     padding: 0;
 }
+header>section>img{
+    height: 78px;
+}
 @media  (min-width: 1281px) and (max-width: 1441px) {
     header>section>img{
         width: 146px;

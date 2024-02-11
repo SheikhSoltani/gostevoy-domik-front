@@ -29,7 +29,7 @@ const currentYear = new Date().getFullYear();
                 </div>
                 <div>
                     <img src="/mail_footer.svg" alt="">
-                    <p>Gostevoydomik@gaml.com</p>
+                    <p>roma.mitrofanov8787@gmail.com</p>
                 </div>
             </div>
             <div>
@@ -93,7 +93,7 @@ const currentYear = new Date().getFullYear();
                 <div>
                     <div>
                         <h4>Информация</h4>
-                        <p>Заезд: с 16:00</p>
+                        <p>Заезд: с 14:00</p>
                         <p>Выезд: до 12:00</p>
                         <p>Бесплатный WI-FI</p>
                         <p>Бесплатная парковка</p>
@@ -183,7 +183,7 @@ section>div{
 }
 section>div>img{
     height: 64px;
-    width: 218px;
+    /* width: 218px; */
 }
 section>div>div{
     display: flex;

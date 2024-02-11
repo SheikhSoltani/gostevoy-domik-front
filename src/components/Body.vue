@@ -11,20 +11,23 @@ import Contacts from '@components/Contacts.vue'
 
 import { ref } from 'vue';
 const array = ref([
-  { img: '/background.jpg' },
+  { img: '/service.png' },
   { img: '/image2.png' },
   { img: '/image3.png' },
   { img: '/image4.png' },
-  { img: '/background.jpg' },
-  { img: '/smartphone.png' },
+  { img: '/image1_1.png' },
+  { img: '/image1_2.png' },
+  { img: '/image1_3.png' },
+  { img: '/image1_4.png' },
+  { img: '/image1_5.png' },
+  { img: '/image1_6.png' },
 ]);
 const array2 = ref([
   { img: '/image5.png' },
-  { img: '/image6.png' },
+  { img: '/image61.png' },
   { img: '/image7.png' },
   { img: '/image8.png' },
-  { img: '/background.jpg' },
-  { img: '/smartphone.png' },
+  { img: '/image6.png' },
 ]);
 const array3 = ref([
   { img: '/image9.png' },
@@ -36,11 +39,9 @@ const array3 = ref([
 ]);
 const array4 = ref([
   { img: '/attractions.jpg',text:'Горнолыжный курорт Pioner' },
-  { img: '/attractions2.jpg',text:'Горнолыжный курорт Лесная сказка' },
-  { img: '/attractions3.png',text:'Бутаковский водопад' },
-  { img: '/attractions4.jpg',text:'Пик фурманова' },
-  { img: '/background.jpg',text:'Горнолыжный курорт Pioner' },
-  { img: '/smartphone.png',text:'Горнолыжный курорт Pioner' },
+  { img: '/attractions2.jpg',text:'Горнолыжный курорт Oi-Qaragai' },
+  { img: '/attractions3.png',text:'Бутаковский водопад 3 км' },
+  { img: '/attractions4.jpg',text:'Пик Букреева 5 км' },
 ]);
 </script>
 

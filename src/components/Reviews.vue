@@ -9,14 +9,14 @@ const move = ref('0px');
 const blockWidth =ref(1810)
 const rightButton = () => {
     moveValue.value -= blockWidth.value;
-    if(2*-blockWidth.value>=moveValue.value){
+    if(3*-blockWidth.value>=moveValue.value){
         moveValue.value=0;
     }
     move.value=moveValue.value+'px'; 
 };
 const leftButton = () => {
     moveValue.value += blockWidth.value;
-    if(moveValue.value>0)moveValue.value=1*-blockWidth.value;
+    if(moveValue.value>0)moveValue.value=2*-blockWidth.value;
     move.value=moveValue.value+'px';
 };
 
@@ -50,10 +50,15 @@ onMounted(async () => {
         <div>
             <div :style="{ left: move }">
                 <div>
-                    Все было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состоянии!
+                    Самое шикарное место из всех где была.
+Природа, обстановка как дома, уют, дизайн интерьера, вся посуда, чистота , вся посуда.
+Роману и Марии всех благ , успехов и процветания.
                 </div>
                 <div>
-                    Все было прекрасн2! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состояни2!
+                    Очень красивое место
+                </div>
+                <div>
+                    Хорошие номера и приятные хозяева, очень рекомендую
                 </div>
             </div>
         </div>
@@ -112,6 +117,9 @@ section>div>div>div{
     margin: 60px 360px 0;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 section>div>div>div::after {
     content: ''; 
