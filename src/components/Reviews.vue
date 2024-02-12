@@ -63,9 +63,9 @@ onMounted(async () => {
             </div>
         </div>
         <div>
-            <img src="/LeftButton.svg" alt="" @click="leftButton">
-            <img class="user" src="/user.svg" alt="">
-            <img src="/RightButton.svg" alt="" @click="rightButton">
+            <img src="/LeftButton.svg" alt="image" @click="leftButton">
+            <img class="user" src="/user.svg" alt="image">
+            <img src="/RightButton.svg" alt="image" @click="rightButton">
         </div>
     </section>
 </template>

@@ -98,7 +98,7 @@ watchEffect(() => {
     <section class="contain">
         <h3>{{ text }}</h3>
         <div>
-            <img src="/LeftButton.svg" alt="" @click="leftButton">
+            <img src="/LeftButton.svg" alt="image" @click="leftButton">
             <div>
                 <div :style="{ left: move }">
                     <div v-for="(elem,index) in arr"  :style="{background: ` url(${elem.img})`,
@@ -109,17 +109,17 @@ watchEffect(() => {
                     </div>
                 </div>
             </div>
-            <img src="/RightButton.svg" alt="" @click="rightButton">
+            <img src="/RightButton.svg" alt="image" @click="rightButton">
         </div>
     </section>
     <div v-show="isShow" class="big_image" >
-        <img src="/LeftButton.svg" alt="" @click="leftButton2">
+        <img src="/LeftButton.svg" alt="image" @click="leftButton2">
         <div :style="{background: ` url(${arr[count].img})`,
         'background-position': 'center',
         'background-size': 'contain',
         'background-repeat': 'no-repeat', }">
         </div>
-        <img src="/RightButton.svg" alt="" @click="rightButton2">
+        <img src="/RightButton.svg" alt="image" @click="rightButton2">
         <div class="background" @click="imageClose"></div>
     </div>
 </template>
@@ -198,7 +198,6 @@ section>div>div>div>div{
 section>div>div>div>div>div{
     margin-top: 50%;
     width: 100%;
-    height: 50%;
     padding: 0 10%;
     background: rgba(0,0,0,0.5);
     display: flex;

@@ -108,7 +108,7 @@ const scrollTo = (index) => {
             <div>
                 <a href="https://www.instagram.com/gostevoydomik_almatau"><img src="/inst.svg" alt="img"></a>
                 <a href="https://wa.me/77054472636"><img src="/whatsapp.svg" alt="img"></a>
-                <a href=""><img src="/telegram.svg" alt="img"></a>
+                <a href="https://t.me/Romanyh87"><img src="/telegram.svg" alt="img"></a>
                 <a href="https://www.facebook.com/profile.php?id=100066717135301"><img src="/facebook.svg" alt="img"></a>
             </div>
         </section>
@@ -116,9 +116,9 @@ const scrollTo = (index) => {
     
     <header id="mobile" :class="{ active: isActive }">
         <div class="show">
-            <img src="/Logo.svg" alt="">
-            <img v-show="!Active" src="/burger.svg" alt="" @click="toggle">
-            <img v-show="Active" src="/close.svg" alt="" @click="toggle">
+            <img src="/Logo.svg" alt="image">
+            <img v-show="!Active" src="/burger.svg" alt="image" @click="toggle">
+            <img v-show="Active" src="/close.svg" alt="image" @click="toggle">
         </div>
         <div  v-show="Active">
             <a @click="scrollTo(1)">ГЛАВНАЯ</a>
@@ -128,11 +128,11 @@ const scrollTo = (index) => {
             <a @click="scrollTo(5)">КОНТАКТ</a>
             <div>
                 <img src="/home.svg" alt="img">
-                <p>Алматау, ул.Октябрьская, д.492</p>
+                <p>Алматау-9</p>
             </div>
             <div>
                 <img src="/massage.svg" alt="img">
-                <p>roma.mitrofanov8787@gmail.com</p>
+                <a href="https://go.2gis.com/y24fe">roma.mitrofanov8787@gmail.com</a>
             </div>
             <div>
                 <img src="/phone.svg" alt="img">
@@ -141,7 +141,7 @@ const scrollTo = (index) => {
             <div>
                 <a href="https://www.instagram.com/gostevoydomik_almatau"><img src="/inst.svg" alt="img"></a>
                 <a href="https://wa.me/77054472636"><img src="/whatsapp.svg" alt="img"></a>
-                <a href=""><img src="/telegram.svg" alt="img"></a>
+                <a href="https://t.me/Romanyh87"><img src="/telegram.svg" alt="img"></a>
                 <a href="https://www.facebook.com/profile.php?id=100066717135301"><img src="/facebook.svg" alt="img"></a>
             </div>
         </div>
@@ -311,7 +311,11 @@ header>section>img{
     }
 
     #mobile>div>div>a{
-        margin: 0 6px;
+        text-decoration: none;
+        margin:0 6px;
+        font-family: Inter;
+        font-size: 8px;
+        font-weight: 400;
     }
     #mobile>div>a.active{
     color: #FFB100;

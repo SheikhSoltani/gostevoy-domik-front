@@ -77,12 +77,6 @@ section>div>span{
     right: 0;
     width: 50%;
 }
-section>div>span>img{
-    height: 553px;
-    width: 100%;
-    /* width: 740px; */
-    border-radius: 10px;
-}
 h2{
     color: #585858;
     font-family: Inter;

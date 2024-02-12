@@ -9,7 +9,7 @@
             <p>Подпишитесь на наши рассылки, чтобы быть в курсе действующих акций и скидок</p>
             <a href="https://www.instagram.com/gostevoydomik_almatau">Подписаться</a>
         </div>
-        <img src="/smartphone.png" alt="">
+        <img src="/smartphone.png" alt="image">
     </section>
 </template>
 
@@ -53,7 +53,7 @@ a{
 section>img{
     width: 400px;
     height: 450px;
-    margin: 30px 0 0;
+    align-self:flex-end;
 }
 @media  (min-width: 1281px) and (max-width: 1441px) {
     div{
@@ -68,7 +68,6 @@ section>img{
     section>img{
         width: 300px;
         height: 350px;
-        margin: 30px 0 0;
     }
 }
 @media  (min-width: 601px) and (max-width: 1280px) {
@@ -84,7 +83,6 @@ section>img{
     section>img{
         width: 300px;
         height: 350px;
-        margin: calc(70% - 340px) 0 0;
     }
 }
 @media  (min-width: 601px) and (max-width: 1000px) {
@@ -100,7 +98,6 @@ section>img{
     section>img{
         width: 300px;
         height: 350px;
-        margin: calc(70% - 270px) 0 0;
     }
 }
 @media (max-width: 600px) {
@@ -116,7 +113,6 @@ section>img{
     section>img{
         width: 180px;
         height: 180px;
-        margin: calc(70% - 160px) 0 0;
     }
     div{
         padding: 60px 0 40px;
@@ -140,7 +136,6 @@ section>img{
     section>img{
         width: 130px;
         height: 130px;
-        margin: calc(100% - 120px) 0 0;
     }
     div{
         padding: 60px 0 80px;

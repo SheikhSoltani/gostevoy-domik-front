@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service2.png')`,
+                <div  :style="{background: `url('/service3.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service3.png')`,
+                <div  :style="{background: `url('/service2.png')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">

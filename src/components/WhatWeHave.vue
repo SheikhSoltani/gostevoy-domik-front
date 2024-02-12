@@ -58,7 +58,7 @@ onMounted(async () => {
                 <h3>Терасса</h3>
                 <p>Беседка, Зона костра, Детская площадка</p>
             </div>
-            <h4>ПИТАНИЕ НЕ ВКЛЮЧЕННО!</h4>
+            <h4>ПИТАНИЕ НЕ ВКЛЮЧЕНО!</h4>
         </div>
     </section>
 </template>
@@ -115,12 +115,6 @@ section>div>span>div>p{
 }
 section>div>span>div>p::after{
     display: none;
-}
-section>div>span>img{
-    height: 553px;
-    width: 100%;
-    /* width: 740px; */
-    border-radius: 10px;
 }
 h2{
     color: #585858;

@@ -9,7 +9,7 @@
         <titletwo>телефон * WHATSAPP * TELEGRAM</titletwo>
         <div>
             <number>+7 (701) 715-04-28</number>
-            <undernumber>Мария МИТРОФАНОВна</undernumber>
+            <undernumber>Мария МИТРОФАНОВа</undernumber>
             <number>+7 (705) 447-26-36</number>
             <undernumber>Роман МИТРОФАНОВ</undernumber>
         </div>
@@ -197,8 +197,10 @@ a{
         font-size: 18px;
     }
     email{
+        word-wrap: break-word;
         font-size: 18px;
         margin: 15px 0 39px;
+        max-width: 100%;
     }
     a{
         font-size: 20px;
