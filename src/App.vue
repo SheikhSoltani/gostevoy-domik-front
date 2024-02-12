@@ -27,6 +27,14 @@ useHead({
       property: 'og:description',
       content: og_description,
     },
+    {
+      httpEquiv: "Cache-Control",
+      content: "max-age=3600",
+    },
+    {
+      httpEquiv: "Expires",
+      content: "Sat, 12 Feb 2025 12:00:00 GMT",
+    }
   ],
 });
 </script>
