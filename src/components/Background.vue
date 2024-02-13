@@ -1,11 +1,17 @@
 <script setup>
 
+import { ref, onMounted } from 'vue';
+
+const idName = ref(''); 
 const scrollTo = () => {
-    const targetElement3 = document.getElementById('services');
+    const targetElement3 = document.getElementById(idName.value);
     if (targetElement3) {
         targetElement3.scrollIntoView({ behavior: 'smooth', block: "center" });
     }
 };
+onMounted(async () => {
+    idName.value='services';
+});
 </script>
 
 <template>
