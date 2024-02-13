@@ -41,7 +41,7 @@ useHead({
 
 <template>
   <Header/>
-  <!-- <Background/> -->
+  <Background/>
   <Body/>
   <Footer/>
 </template>
