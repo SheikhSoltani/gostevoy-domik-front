@@ -14,7 +14,7 @@ const count = ref(0)
 const rightButton = () => {
     if(isMobile.value){
         moveValue.value -= 243;
-        if(6*-243>=moveValue.value){
+        if(arr.length*-243>=moveValue.value){
             moveValue.value=0;
         }
         move.value=moveValue.value+'px'; 
@@ -64,6 +64,9 @@ onMounted(async () => {
     isMobile.value = window.matchMedia('(max-width: 767px)').matches;
     isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
     isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
+    if(arr.length<5){
+        isFull.value=false;
+    }
     const handleResize = () => {
         isMobile.value = window.matchMedia('(max-width: 767px)').matches;
         isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
@@ -75,8 +78,8 @@ onMounted(async () => {
     if(isTablet.value){
          blockWidth.value =144
     }
-    if(arr.length<5){
-        isFull.value=false;
+    if(isMobile.value){
+        isFull.value=true;
     }
     onUnmounted(() => {
         window.removeEventListener('resize', handleResize);
