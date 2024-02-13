@@ -50,7 +50,7 @@ const array4 = ref([
 
 <template>
     <section>
-        <img src="/wave.svg" alt="image">
+        <img loading="lazy" src="/wave.svg" alt="image">
         <AboutUs/>
         <Slider :arr="array" text="Номера"/>
         <Slider :arr="array2" text="Терасса"/>

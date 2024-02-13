@@ -84,20 +84,20 @@ const scrollTo = (index) => {
     <header class="contain">
         <section class="first">
             <div>
-                <img src="/home.svg" alt="img">
+                <img loading="lazy" src="/home.svg" alt="img">
                 <a href="https://go.2gis.com/y24fe">Алматау 9</a>
             </div>
             <div>
-                <img src="/massage.svg" alt="img">
+                <img loading="lazy" src="/massage.svg" alt="img">
                 <p>roma.mitrofanov8787@gmail.com</p>
             </div>
             <div>
-                <img src="/phone.svg" alt="img">
+                <img loading="lazy" src="/phone.svg" alt="img">
                 <p>+7 (705) 447-26-36</p>
             </div>
         </section>
         <section>
-            <img @click="scrollTo(1)" src="/Logo.svg" alt="img">
+            <img loading="lazy" @click="scrollTo(1)" src="/Logo.svg" alt="img">
             <div>
                 <a @click="scrollTo(1)" :class="{ active: activeSection === 1 }">ГЛАВНАЯ</a>
                 <a @click="scrollTo(2)" :class="{ active: activeSection === 2 }">О НАС</a>
@@ -106,19 +106,19 @@ const scrollTo = (index) => {
                 <a @click="scrollTo(5)" :class="{ active: activeSection === 5 }">КОНТАКТЫ</a>
             </div>
             <div>
-                <a href="https://www.instagram.com/gostevoydomik_almatau"><img src="/inst.svg" alt="img"></a>
-                <a href="https://wa.me/77054472636"><img src="/whatsapp.svg" alt="img"></a>
-                <a href="https://t.me/Romanyh87"><img src="/telegram.svg" alt="img"></a>
-                <a href="https://www.facebook.com/profile.php?id=100066717135301"><img src="/facebook.svg" alt="img"></a>
+                <a href="https://www.instagram.com/gostevoydomik_almatau"><img loading="lazy" src="/inst.svg" alt="img"></a>
+                <a href="https://wa.me/77054472636"><img loading="lazy" src="/whatsapp.svg" alt="img"></a>
+                <a href="https://t.me/Romanyh87"><img loading="lazy" src="/telegram.svg" alt="img"></a>
+                <a href="https://www.facebook.com/profile.php?id=100066717135301"><img loading="lazy" src="/facebook.svg" alt="img"></a>
             </div>
         </section>
     </header>
     
     <header id="mobile" :class="{ active: isActive }">
         <div class="show">
-            <img src="/Logo.svg" alt="image">
-            <img v-show="!Active" src="/burger.svg" alt="image" @click="toggle">
-            <img v-show="Active" src="/close.svg" alt="image" @click="toggle">
+            <img loading="lazy" src="/Logo.svg" alt="image">
+            <img loading="lazy" v-show="!Active" src="/burger.svg" alt="image" @click="toggle">
+            <img loading="lazy" v-show="Active" src="/close.svg" alt="image" @click="toggle">
         </div>
         <div  v-show="Active">
             <a @click="scrollTo(1)">ГЛАВНАЯ</a>
@@ -127,22 +127,22 @@ const scrollTo = (index) => {
             <a @click="scrollTo(4)">КАК ДОБРАТЬСЯ</a>
             <a @click="scrollTo(5)">КОНТАКТ</a>
             <div>
-                <img src="/home.svg" alt="img">
+                <img loading="lazy" src="/home.svg" alt="img">
                 <p>Алматау-9</p>
             </div>
             <div>
-                <img src="/massage.svg" alt="img">
+                <img loading="lazy" src="/massage.svg" alt="img">
                 <a href="https://go.2gis.com/y24fe">roma.mitrofanov8787@gmail.com</a>
             </div>
             <div>
-                <img src="/phone.svg" alt="img">
+                <img loading="lazy" src="/phone.svg" alt="img">
                 <p>8 (762) 279-56-89</p>
             </div>
             <div>
-                <a href="https://www.instagram.com/gostevoydomik_almatau"><img src="/inst.svg" alt="img"></a>
-                <a href="https://wa.me/77054472636"><img src="/whatsapp.svg" alt="img"></a>
-                <a href="https://t.me/Romanyh87"><img src="/telegram.svg" alt="img"></a>
-                <a href="https://www.facebook.com/profile.php?id=100066717135301"><img src="/facebook.svg" alt="img"></a>
+                <a href="https://www.instagram.com/gostevoydomik_almatau"><img loading="lazy" src="/inst.svg" alt="img"></a>
+                <a href="https://wa.me/77054472636"><img loading="lazy" src="/whatsapp.svg" alt="img"></a>
+                <a href="https://t.me/Romanyh87"><img loading="lazy" src="/telegram.svg" alt="img"></a>
+                <a href="https://www.facebook.com/profile.php?id=100066717135301"><img loading="lazy" src="/facebook.svg" alt="img"></a>
             </div>
         </div>
     </header>

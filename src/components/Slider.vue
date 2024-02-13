@@ -102,7 +102,7 @@ watchEffect(() => {
     <section class="contain">
         <h3>{{ text }}</h3>
         <div>
-            <img v-show="isFull" src="/LeftButton.svg" alt="image" @click="leftButton">
+            <img loading="lazy" v-show="isFull" src="/LeftButton.svg" alt="image" @click="leftButton">
             <div>
                 <div :style="{ left: move }">
                     <div v-for="(elem,index) in arr"  :style="{background: ` url(${elem.img})`,
@@ -112,17 +112,17 @@ watchEffect(() => {
                     </div>
                 </div>
             </div>
-            <img v-show="isFull" src="/RightButton.svg" alt="image" @click="rightButton">
+            <img loading="lazy" v-show="isFull" src="/RightButton.svg" alt="image" @click="rightButton">
         </div>
     </section>
     <div v-show="isShow" class="big_image" >
-        <img src="/LeftButton.svg" alt="image" @click="leftButton2">
+        <img loading="lazy" src="/LeftButton.svg" alt="image" @click="leftButton2">
         <div :style="{background: ` url(${arr[count].img})`,
         'background-position': 'center',
         'background-size': 'contain',
         'background-repeat': 'no-repeat', }">
         </div>
-        <img src="/RightButton.svg" alt="image" @click="rightButton2">
+        <img loading="lazy" src="/RightButton.svg" alt="image" @click="rightButton2">
         <div class="background" @click="imageClose"></div>
     </div>
 </template>

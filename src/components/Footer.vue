@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
     <footer>
         <section class="contain">
             <div>
-                <img src="/logo_footer.svg" alt="image">
+                <img loading="lazy" src="/logo_footer.svg" alt="image">
                 <p>
                     Сайт сделан веб студией<br/>
                     <a href="https://digital-solution.kz">Digital Solution.kz</a>
@@ -16,19 +16,19 @@ const currentYear = new Date().getFullYear();
             <div>
                 <h4>Контакты</h4>
                 <div>
-                    <img src="/phone_footer.svg" alt="image">
+                    <img loading="lazy" src="/phone_footer.svg" alt="image">
                     <p>+7 (705) 447-26-36</p>
                 </div>
                 <div>
-                    <img src="/home_footer.svg" alt="image">
+                    <img loading="lazy" src="/home_footer.svg" alt="image">
                     <p>Алматы</p>
                 </div>
                 <div>
-                    <img src="/mark_footer.svg" alt="image">
+                    <img loading="lazy" src="/mark_footer.svg" alt="image">
                     <p>Алматау 9</p>
                 </div>
                 <div>
-                    <img src="/mail_footer.svg" alt="image">
+                    <img loading="lazy" src="/mail_footer.svg" alt="image">
                     <p>roma.mitrofanov8787@gmail.com</p>
                 </div>
             </div>
@@ -43,16 +43,16 @@ const currentYear = new Date().getFullYear();
                 <h4>Следите за нами в социальных  сетях</h4>
                 <div>
                     <a href="https://www.facebook.com/profile.php?id=100066717135301">
-                        <img src="/facebook_footer.svg" alt="image">
+                        <img loading="lazy" src="/facebook_footer.svg" alt="image">
                     </a>
                     <a href="https://www.instagram.com/gostevoydomik_almatau">
-                        <img src="/inst_footer.svg" alt="image">
+                        <img loading="lazy" src="/inst_footer.svg" alt="image">
                     </a>
                     <a href="https://t.me/Romanyh87">
-                        <img src="/telegram_footer.svg" alt="image">
+                        <img loading="lazy" src="/telegram_footer.svg" alt="image">
                     </a>
                     <a href="https://wa.me/77054472636">
-                        <img src="/whatsapp_footer.svg" alt="image">
+                        <img loading="lazy" src="/whatsapp_footer.svg" alt="image">
                     </a>
                 </div>
             </div>
@@ -63,25 +63,25 @@ const currentYear = new Date().getFullYear();
     </footer>
     <footer id="mobile">
         <section class="contain">
-            <img src="/logo_footer.svg" alt="image">
+            <img loading="lazy" src="/logo_footer.svg" alt="image">
             <div>
                 <div>
                     <div>
                         <h4>Контакты</h4>
                         <div>
-                            <img src="/phone_footer.svg" alt="image">
+                            <img loading="lazy" src="/phone_footer.svg" alt="image">
                             <p>+7 (705) 447-26-36</p>
                         </div>
                         <div>
-                            <img src="/home_footer.svg" alt="image">
+                            <img loading="lazy" src="/home_footer.svg" alt="image">
                             <p>Алматы</p>
                         </div>
                         <div>
-                            <img src="/mark_footer.svg" alt="image">
+                            <img loading="lazy" src="/mark_footer.svg" alt="image">
                             <p>Алматау 9</p>
                         </div>
                         <div>
-                            <img src="/mail_footer.svg" alt="image">
+                            <img loading="lazy" src="/mail_footer.svg" alt="image">
                             <p>roma.mitrofanov8787@gmail.com</p>
                         </div>
                     </div>
@@ -102,16 +102,16 @@ const currentYear = new Date().getFullYear();
                         <h4>Следите за нами в социальных  сетях</h4>
                         <div>
                             <a href="https://www.facebook.com/profile.php?id=100066717135301">
-                                <img src="/facebook_footer.svg" alt="image">
+                                <img loading="lazy" src="/facebook_footer.svg" alt="image">
                             </a>
                             <a href="https://www.instagram.com/gostevoydomik_almatau">
-                                <img src="/inst_footer.svg" alt="image">
+                                <img loading="lazy" src="/inst_footer.svg" alt="image">
                             </a>
                             <a href="https://t.me/Romanyh87">
-                                <img src="/telegram_footer.svg" alt="image">
+                                <img loading="lazy" src="/telegram_footer.svg" alt="image">
                             </a>
                             <a href="https://wa.me/77054472636">
-                                <img src="/whatsapp_footer.svg" alt="image">
+                                <img loading="lazy" src="/whatsapp_footer.svg" alt="image">
                             </a>
                         </div>
                     </div>
