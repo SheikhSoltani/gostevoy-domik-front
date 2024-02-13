@@ -7,7 +7,7 @@
         <h2>НАШИ НОМЕРА</h2>
         <div>
             <div>
-                <div  :style="{background: `url('/service.jpg')`,
+                <div  :style="{background: `url('/service.webp')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service3.jpg')`,
+                <div  :style="{background: `url('/service3.webp')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service2.jpg')`,
+                <div  :style="{background: `url('/service2.webp')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">

@@ -11,40 +11,40 @@ import Contacts from '@components/Contacts.vue'
 
 import { ref } from 'vue';
 const array = ref([
-  { img: '/service.jpg' },
-  { img: '/image2.jpg' },
-  { img: '/image3.jpg' },
-  { img: '/image4.jpg' },
-  { img: '/image1_1.jpg' },
-  { img: '/image1_2.jpg' },
-  { img: '/image1_3.jpg' },
-  { img: '/image1_4.jpg' },
-  { img: '/image1_5.jpg' },
-  { img: '/image1_6.jpg' },
+  { img: '/service.webp' },
+  { img: '/image2.webp' },
+  { img: '/image3.webp' },
+  { img: '/image4.webp' },
+  { img: '/image1_1.webp' },
+  { img: '/image1_2.webp' },
+  { img: '/image1_3.webp' },
+  { img: '/image1_4.webp' },
+  { img: '/image1_5.webp' },
+  { img: '/image1_6.webp' },
 ]);
 const array2 = ref([
-  { img: '/image5.jpg' },
-  { img: '/image61.jpg' },
-  { img: '/image7.jpg' },
-  { img: '/image8.jpg' },
-  { img: '/image6.jpg' },
+  { img: '/image5.webp' },
+  { img: '/image61.webp' },
+  { img: '/image7.webp' },
+  { img: '/image8.webp' },
+  { img: '/image6.webp' },
 ]);
 const array3 = ref([
-  { img: '/image9.jpg' },
-  { img: '/image13.jpg' },
-  { img: '/image14.jpg' },
-  { img: '/image15.jpg' },
-  { img: '/image16.jpg' },
-  { img: '/image17.jpg' },
-  { img: '/image18.jpg' },
-  { img: '/image19.jpg' },
-  { img: '/image20.jpg' },
+  { img: '/image9.webp' },
+  { img: '/image13.webp' },
+  { img: '/image14.webp' },
+  { img: '/image15.webp' },
+  { img: '/image16.webp' },
+  { img: '/image17.webp' },
+  { img: '/image18.webp' },
+  { img: '/image19.webp' },
+  { img: '/image20.webp' },
 ]);
 const array4 = ref([
-  { img: '/attractions.jpg',text:'Горнолыжный курорт Pioner' },
-  { img: '/attractions2.jpg',text:'Горнолыжный курорт Oi-Qaragai' },
-  { img: '/attractions3.jpg',text:'Бутаковский водопад 3 км' },
-  { img: '/attractions4.jpg',text:'Пик Букреева 5 км' },
+  { img: '/attractions.webp',text:'Горнолыжный курорт Pioner' },
+  { img: '/attractions2.webp',text:'Горнолыжный курорт Oi-Qaragai' },
+  { img: '/attractions3.webp',text:'Бутаковский водопад 3 км' },
+  { img: '/attractions4.webp',text:'Пик Букреева 5 км' },
 ]);
 </script>
 

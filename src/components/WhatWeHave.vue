@@ -82,7 +82,7 @@ section>div{
 }
 section>div>span{
     position: absolute;
-    background: url('/background_poster.jpg');
+    background: url('/background_poster.webp');
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
