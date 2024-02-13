@@ -13,13 +13,13 @@
                     'background-repeat': 'no-repeat',}">
                     <div>
                         <h3>LUXURY</h3>
-                        <h4>50-80 KZT <color>/ 1 Сутки</color></h4>
+                        <h4>50-80 тыс. ТГ <color>/ 1 Сутки</color></h4>
                         <p>-От 2 до 4 Персон</p>
                         <p>-4 Спальных мест</p>
                         <p>-WI-FI</p>
                         <p>-Барбекью зона</p>
                         <p>-Летняя терасса</p>
-                        <a href="https://wa.me/77054472636">Забронировать</a>
+                        <a href="https://wa.me/77054472636?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20luxury%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80">Забронировать</a>
                     </div>
                 </div>
             </div>
@@ -30,13 +30,13 @@
                     'background-repeat': 'no-repeat',}">
                     <div>
                         <h3>MEDIUM</h3>
-                        <h4>60-90 KZT <color>/ 1 Сутки</color></h4>
+                        <h4>60-90 тыс. ТГ <color>/ 1 Сутки</color></h4>
                         <p>-От 4 до 6 Персон</p>
                         <p>-6 Спальных мест</p>
                         <p>-WI-FI</p>
                         <p>-Барбекью зона</p>
                         <p>-Летняя терасса</p>
-                        <a href="https://wa.me/77054472636">Забронировать</a>
+                        <a href="https://wa.me/77054472636?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20medium%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80">Забронировать</a>
                     </div>
                 </div>
             </div>
@@ -47,13 +47,13 @@
                     'background-repeat': 'no-repeat',}">
                     <div>
                         <h3>LARGE</h3>
-                        <h4>150-180 KZT <color>/ 1 Сутки</color></h4>
+                        <h4>150-180 тыс. ТГ <color>/ 1 Сутки</color></h4>
                         <p>-От 10 до 12 Персон</p>
                         <p>-8 Спальных мест</p>
                         <p>-WI-FI</p>
                         <p>-Барбекью зона</p>
                         <p>-Летняя терасса</p>
-                        <a href="https://wa.me/77054472636">Забронировать</a>
+                        <a href="https://wa.me/77054472636?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20large%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80">Забронировать</a>
                     </div>
                 </div>
             </div>

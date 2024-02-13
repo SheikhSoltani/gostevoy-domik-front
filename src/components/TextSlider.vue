@@ -5,6 +5,7 @@ const { text,arr } = defineProps(['text','arr']);
 const isMobile = ref(false);
 const isLaptop = ref(false);
 const isTablet = ref(false);
+const isFull = ref(true);
 const isShow = ref(false);
 const moveValue =ref(0)
 const blockWidth =ref(276)
@@ -74,6 +75,9 @@ onMounted(async () => {
     if(isTablet.value){
          blockWidth.value =144
     }
+    if(arr.length<5){
+        isFull.value=false;
+    }
     onUnmounted(() => {
         window.removeEventListener('resize', handleResize);
     });
@@ -98,7 +102,7 @@ watchEffect(() => {
     <section class="contain">
         <h3>{{ text }}</h3>
         <div>
-            <img src="/LeftButton.svg" alt="image" @click="leftButton">
+            <img v-show="isFull" src="/LeftButton.svg" alt="image" @click="leftButton">
             <div>
                 <div :style="{ left: move }">
                     <div v-for="(elem,index) in arr"  :style="{background: ` url(${elem.img})`,
@@ -109,7 +113,7 @@ watchEffect(() => {
                     </div>
                 </div>
             </div>
-            <img src="/RightButton.svg" alt="image" @click="rightButton">
+            <img v-show="isFull" src="/RightButton.svg" alt="image" @click="rightButton">
         </div>
     </section>
     <div v-show="isShow" class="big_image" >

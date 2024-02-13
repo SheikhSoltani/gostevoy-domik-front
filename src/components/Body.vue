@@ -34,8 +34,6 @@ const array3 = ref([
   { img: '/image10.jpg' },
   { img: '/image11.jpg' },
   { img: '/image12.jpg' },
-  { img: '/background.jpg' },
-  { img: '/smartphone.png' },
 ]);
 const array4 = ref([
   { img: '/attractions.jpg',text:'Горнолыжный курорт Pioner' },
