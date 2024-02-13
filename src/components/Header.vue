@@ -97,7 +97,7 @@ const scrollTo = (index) => {
             </div>
         </section>
         <section>
-            <img src="/Logo.svg" alt="img">
+            <img @click="scrollTo(1)" src="/Logo.svg" alt="img">
             <div>
                 <a @click="scrollTo(1)" :class="{ active: activeSection === 1 }">ГЛАВНАЯ</a>
                 <a @click="scrollTo(2)" :class="{ active: activeSection === 2 }">О НАС</a>

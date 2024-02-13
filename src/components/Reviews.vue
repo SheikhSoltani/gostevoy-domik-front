@@ -95,7 +95,7 @@ h2{
 section>div{
     position: relative;
     width: 1810px;
-    height: 210px;
+    height: 230px;
     overflow: hidden;
 }
 section>div>div{
