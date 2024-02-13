@@ -7,7 +7,7 @@
         <h2>НАШИ НОМЕРА</h2>
         <div>
             <div>
-                <div  :style="{background: `url('/service.png')`,
+                <div  :style="{background: `url('/service.jpg')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service3.png')`,
+                <div  :style="{background: `url('/service3.jpg')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service2.png')`,
+                <div  :style="{background: `url('/service2.jpg')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">

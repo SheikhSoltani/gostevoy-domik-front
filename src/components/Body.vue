@@ -11,26 +11,26 @@ import Contacts from '@components/Contacts.vue'
 
 import { ref } from 'vue';
 const array = ref([
-  { img: '/service.png' },
-  { img: '/image2.png' },
-  { img: '/image3.png' },
-  { img: '/image4.png' },
-  { img: '/image1_1.png' },
-  { img: '/image1_2.png' },
-  { img: '/image1_3.png' },
-  { img: '/image1_4.png' },
-  { img: '/image1_5.png' },
-  { img: '/image1_6.png' },
+  { img: '/service.jpg' },
+  { img: '/image2.jpg' },
+  { img: '/image3.jpg' },
+  { img: '/image4.jpg' },
+  { img: '/image1_1.jpg' },
+  { img: '/image1_2.jpg' },
+  { img: '/image1_3.jpg' },
+  { img: '/image1_4.jpg' },
+  { img: '/image1_5.jpg' },
+  { img: '/image1_6.jpg' },
 ]);
 const array2 = ref([
-  { img: '/image5.png' },
-  { img: '/image61.png' },
-  { img: '/image7.png' },
-  { img: '/image8.png' },
-  { img: '/image6.png' },
+  { img: '/image5.jpg' },
+  { img: '/image61.jpg' },
+  { img: '/image7.jpg' },
+  { img: '/image8.jpg' },
+  { img: '/image6.jpg' },
 ]);
 const array3 = ref([
-  { img: '/image9.png' },
+  { img: '/image9.jpg' },
   { img: '/image10.jpg' },
   { img: '/image11.jpg' },
   { img: '/image12.jpg' },
@@ -38,7 +38,7 @@ const array3 = ref([
 const array4 = ref([
   { img: '/attractions.jpg',text:'Горнолыжный курорт Pioner' },
   { img: '/attractions2.jpg',text:'Горнолыжный курорт Oi-Qaragai' },
-  { img: '/attractions3.png',text:'Бутаковский водопад 3 км' },
+  { img: '/attractions3.jpg',text:'Бутаковский водопад 3 км' },
   { img: '/attractions4.jpg',text:'Пик Букреева 5 км' },
 ]);
 </script>
