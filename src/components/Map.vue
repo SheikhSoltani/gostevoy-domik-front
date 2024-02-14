@@ -4,23 +4,31 @@ const { text,arr } = defineProps(['text','arr']);
 
 const isMobile = ref(false);
 const isLaptop = ref(false);
+const isLaptop2 = ref(false);
 const isTablet = ref(false);
 const height = ref(552);
 const width = ref(636);
 
 onMounted(async () => {
     isMobile.value = window.matchMedia('(max-width: 767px)').matches;
-    isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
+    isTablet.value = window.matchMedia('(max-width: 1020px)').matches;
+    isLaptop2.value = window.matchMedia('(max-width: 1280px)').matches;
     isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     const handleResize = () => {
         isMobile.value = window.matchMedia('(max-width: 767px)').matches;
-        isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
+        isTablet.value = window.matchMedia('(max-width: 1020px)').matches;
+        isLaptop2.value = window.matchMedia('(max-width: 1280px)').matches;
         isLaptop.value = window.matchMedia('(max-width: 1441px)').matches;
     };
     if(isLaptop.value){
     console.log('gh')
         height.value = 542;
         width.value = 542;
+    }
+    if(isLaptop2.value){
+    console.log('gh')
+        height.value = 320;
+        width.value = 320;
     }
     if(isTablet.value){
     console.log('gh')

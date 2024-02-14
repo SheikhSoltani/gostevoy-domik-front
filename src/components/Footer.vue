@@ -197,7 +197,6 @@ section>div>div>a{
 @media  (min-width: 1281px) and (max-width: 1441px) {
     section>div>img{
         height: 48px;
-        width: 164px;
     }
     section>div>div>img{
         height: 11px;
@@ -226,7 +225,6 @@ section>div>div>a{
     }
     section>div>img{
         height: 48px;
-        width: 164px;
     }
     section>div>div>img{
         height: 11px;

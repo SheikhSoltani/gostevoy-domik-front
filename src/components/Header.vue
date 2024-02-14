@@ -223,9 +223,9 @@ header>section>div:last-child>a{
 header>section>img{
     height: 78px;
 }
-@media  (min-width: 1281px) and (max-width: 1441px) {
+@media  (min-width: 1023px) and (max-width: 1441px) {
     header>section>img{
-        width: 146px;
+        height: 48px;
     }
     header>section>div>img{
         padding-right: 7px;
@@ -242,7 +242,7 @@ header>section>img{
         width: 16px;
     }
 }
-@media  (min-width: 601px) and (max-width: 1280px) {
+@media  (min-width: 601px) and (max-width: 1022px) {
     header>section>img{
         width: 95px;
     }

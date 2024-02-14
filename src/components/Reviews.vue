@@ -9,14 +9,14 @@ const move = ref('0px');
 const blockWidth =ref(1810)
 const rightButton = () => {
     moveValue.value -= blockWidth.value;
-    if(3*-blockWidth.value>=moveValue.value){
+    if(5*-blockWidth.value>=moveValue.value){
         moveValue.value=0;
     }
     move.value=moveValue.value+'px'; 
 };
 const leftButton = () => {
     moveValue.value += blockWidth.value;
-    if(moveValue.value>0)moveValue.value=2*-blockWidth.value;
+    if(moveValue.value>0)moveValue.value=4*-blockWidth.value;
     move.value=moveValue.value+'px';
 };
 
@@ -49,6 +49,13 @@ onMounted(async () => {
         <h2>ОТЗЫВЫ О НАС</h2>
         <div>
             <div :style="{ left: move }">
+                <div>
+                    Хочу поблагодарить хозяев этого уютного гостевого домика за прошедшие выходные. Мы замечательно отметили День рождения супруга в кругу родных и друзей. 
+                    И как они подметили - все было душевно, по семейному. Конечно, это благодаря вашему гостевому домику.   
+                </div>
+                <div>
+                    Рекомендую, очень понравилось у вас отдыхать
+                </div>
                 <div>
                     Самое шикарное место из всех где была.
 Природа, обстановка как дома, уют, дизайн интерьера, вся посуда, чистота , вся посуда.

@@ -39,13 +39,15 @@ onMounted(async () => {
 </script>
 
 <template>
-    <section id="map" class="contain">
+    <section class="contain">
         <div>
             <h2>Что включено в номер ?</h2>
             <span>
                 <div>
-                    <h2>Скидка 20%</h2>
-                    <p>Семьям от 3 и более человек</p>
+                    <div>
+                        <h2>Скидка 20%</h2>
+                        <p>Семьям, проживающим более трех дней.</p>
+                    </div>
                 </div>
             </span>
             <div>
@@ -95,26 +97,33 @@ section>div>span{
     border-radius: 10px;
 }
 section>div>span>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
     background: rgba(0,0,0,0.4);
     padding: 15px;
 }
-section>div>span>div>h2{
+section>div>span>div>div>h2{
     color: #FBDFC2;
     font-family: Montserrat;
     font-size: 68px;
     font-weight: 600;
     margin: 55px 0 0;
 }
-section>div>span>div>p{
+section>div>span>div>div>p{
     color: #FFF;
     font-family: Montserrat;
     font-size: 17px;
     font-weight: 500;
     margin: 0 0 54px;
+    width: 50%;
+    font-style: italic;
 }
 section>div>span>div>p::after{
-    display: none;
 }
 h2{
     color: #585858;
@@ -165,11 +174,11 @@ p::after{
     h4{
         font-size: 16px;
     }
-    section>div>span>div>h2{
+    section>div>span>div>div>h2{
         font-size: 36px;
         margin: 30px 0 0;
     }
-    section>div>span>div>p{
+    section>div>span>div>div>p{
         font-size: 9px;
         margin: 0 0 30px;
     }
@@ -208,11 +217,11 @@ p::after{
     p{
         font-size: 14px;
     }
-    section>div>span>div>h2{
+    section>div>span>div>div>h2{
         font-size: 36px;
         margin: 30px 0 0;
     }
-    section>div>span>div>p{
+    section>div>span>div>div>p{
         font-size: 9px;
         margin: 0 0 30px;
     }
