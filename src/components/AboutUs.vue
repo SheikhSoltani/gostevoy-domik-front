@@ -14,7 +14,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 3080px;
 }
 h2{
     color: #585858;
