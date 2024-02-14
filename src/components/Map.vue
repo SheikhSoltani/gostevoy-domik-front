@@ -43,7 +43,7 @@ onMounted(async () => {
         <div>
             <h2>Как доехать до нас ?</h2>
             <span>
-                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A02ad6dbda47c96eb6b6d93c9482b0ffa751cb50ac43815f38286a90e6225fd76&amp;source=constructor" :width="width" :height="height" frameborder="0"></iframe>
+                <iframe loading="lazy" src="https://yandex.com/map-widget/v1/?um=constructor%3A02ad6dbda47c96eb6b6d93c9482b0ffa751cb50ac43815f38286a90e6225fd76&amp;source=constructor" :width="width" :height="height" frameborder="0"></iframe>
             </span>
             <div>
                 <h3>Автомобиль</h3>

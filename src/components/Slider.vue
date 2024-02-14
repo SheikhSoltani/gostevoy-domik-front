@@ -5,12 +5,14 @@ const { text,arr } = defineProps(['text','arr']);
 const isMobile = ref(false);
 const isLaptop = ref(false);
 const isTablet = ref(false);
+const block = ref(null);
 const isFull = ref(true);
 const isShow = ref(false);
 const moveValue =ref(0)
 const blockWidth =ref(276)
 const move = ref('0px'); 
 const count = ref(0)
+const arr2 = ref();
 const rightButton = () => {
     if(isMobile.value){
         moveValue.value -= 243;
@@ -78,6 +80,14 @@ onMounted(async () => {
     if(arr.length<5){
         isFull.value=false;
     }
+    
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    const observer = new IntersectionObserver(handleIntersect, options);
+    observer.observe(block.value);
     onUnmounted(() => {
         window.removeEventListener('resize', handleResize);
     });
@@ -92,6 +102,14 @@ const disableScroll = () => {
     }
 };
 
+const handleIntersect = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+        arr2.value=arr;
+        observer.unobserve(entry.target);
+    }
+  });
+};
 // Слушаем изменения переменной isShow и вызываем соответствующую функцию для управления прокруткой
 watchEffect(() => {
     disableScroll();
@@ -99,16 +117,16 @@ watchEffect(() => {
 </script>
 
 <template>
-    <section class="contain">
+    <section ref="block" class="contain">
         <h3>{{ text }}</h3>
         <div>
             <img loading="lazy" v-show="isFull" src="/LeftButton.svg" alt="image" @click="leftButton">
             <div>
                 <div :style="{ left: move }">
-                    <div v-for="(elem,index) in arr"  :style="{background: ` url(${elem.img})`,
+                    <div v-for="(elem,index) in arr2"  :style="{background: ` url(${elem.img})`,
                         'background-position': 'center',
                         'background-size': 'cover',
-                        'background-repeat': 'no-repeat',}" @click="imageClick(index)" :class="{ 'animated-div': animate }">
+                        'background-repeat': 'no-repeat',}" @click="imageClick(index)" >
                     </div>
                 </div>
             </div>
