@@ -114,7 +114,7 @@ const scrollTo = (index) => {
         </section>
     </header>
     
-    <header id="mobile" :class="{ active: isActive }">
+    <header id="mobile" >
         <div class="show">
             <img loading="lazy" src="/Logo.svg" alt="image">
             <img loading="lazy" v-show="!Active" src="/burger.svg" alt="image" @click="toggle">

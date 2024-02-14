@@ -135,7 +135,7 @@ watchEffect(() => {
     </section>
     <div v-show="isShow" class="big_image" >
         <img loading="lazy" src="/LeftButton.svg" alt="image" @click="leftButton2">
-        <div :style="{background: ` url(${arr[count].img})`,
+        <div v-if="arr2" :style="{background: ` url(${arr2[count].img})`,
         'background-position': 'center',
         'background-size': 'contain',
         'background-repeat': 'no-repeat', }">

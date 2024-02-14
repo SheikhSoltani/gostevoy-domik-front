@@ -5,12 +5,14 @@ const { text,arr } = defineProps(['text','arr']);
 const isMobile = ref(false);
 const isLaptop = ref(false);
 const isTablet = ref(false);
+const block = ref(null);
 const isFull = ref(true);
 const isShow = ref(false);
 const moveValue =ref(0)
 const blockWidth =ref(276)
 const move = ref('0px'); 
 const count = ref(0)
+const arr2 = ref();
 const rightButton = () => {
     if(isMobile.value){
         moveValue.value -= 243;
@@ -60,6 +62,14 @@ const imageClose = (index) => {
     isShow.value=false;
 };
 
+const handleIntersect = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+        arr2.value=arr;
+        observer.unobserve(entry.target);
+    }
+  });
+};
 onMounted(async () => {
     isMobile.value = window.matchMedia('(max-width: 767px)').matches;
     isTablet.value = window.matchMedia('(max-width: 1280px)').matches;
@@ -81,6 +91,13 @@ onMounted(async () => {
     if(isMobile.value){
         isFull.value=true;
     }
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    const observer = new IntersectionObserver(handleIntersect, options);
+    observer.observe(block.value);
     onUnmounted(() => {
         window.removeEventListener('resize', handleResize);
     });
@@ -102,16 +119,16 @@ watchEffect(() => {
 </script>
 
 <template>
-    <section class="contain">
+    <section ref="block" class="contain">
         <h3>{{ text }}</h3>
         <div>
             <img loading="lazy" v-show="isFull" src="/LeftButton.svg" alt="image" @click="leftButton">
             <div>
                 <div :style="{ left: move }">
-                    <div v-for="(elem,index) in arr"  :style="{background: ` url(${elem.img})`,
+                    <div v-for="(elem,index) in arr2"  :style="{background: ` url(${elem.img})`,
                         'background-position': 'center',
                         'background-size': 'cover',
-                        'background-repeat': 'no-repeat',}" @click="imageClick(index)" :class="{ 'animated-div': animate }">
+                        'background-repeat': 'no-repeat',}" @click="imageClick(index)">
                         <div>{{ elem.text }}</div>
                     </div>
                 </div>
@@ -121,7 +138,7 @@ watchEffect(() => {
     </section>
     <div v-show="isShow" class="big_image" >
         <img loading="lazy" src="/LeftButton.svg" alt="image" @click="leftButton2">
-        <div :style="{background: ` url(${arr[count].img})`,
+        <div v-if="arr2" :style="{background: ` url(${arr2[count].img})`,
         'background-position': 'center',
         'background-size': 'contain',
         'background-repeat': 'no-repeat', }">
