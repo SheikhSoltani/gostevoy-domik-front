@@ -128,7 +128,7 @@ const scrollTo = (index) => {
             <a @click="scrollTo(5)">КОНТАКТ</a>
             <div>
                 <img loading="lazy" src="/home.svg" alt="img">
-                <p>Алматау-9</p>
+                <a href="https://go.2gis.com/y24fe">Алматау 9</a>
             </div>
             <div>
                 <img loading="lazy" src="/massage.svg" alt="img">
@@ -316,6 +316,7 @@ header>section>img{
         font-family: Inter;
         font-size: 8px;
         font-weight: 400;
+        color: #1E1E1E;
     }
     #mobile>div>a.active{
     color: #FFB100;

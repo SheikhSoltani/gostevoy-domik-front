@@ -9,7 +9,7 @@
             <p>Подпишитесь на наши рассылки, чтобы быть в курсе действующих акций и скидок</p>
             <a href="https://www.instagram.com/gostevoydomik_almatau">Подписаться</a>
         </div>
-        <img loading="lazy" src="/smartphone.webp" alt="image">
+        <img loading="lazy" src="/smartphone.png" alt="image">
     </section>
 </template>
 
