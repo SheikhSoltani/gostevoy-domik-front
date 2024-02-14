@@ -36,7 +36,7 @@ p{
 }
 @media (max-width: 600px) {
     section{
-        margin-bottom:36px;
+        margin-bottom:3036px;
         padding-top: 24px;
     }
     p{
