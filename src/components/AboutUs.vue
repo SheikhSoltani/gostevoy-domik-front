@@ -14,7 +14,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3080px;
+    margin-bottom: 80px;
 }
 h2{
     color: #585858;
@@ -36,7 +36,7 @@ p{
 }
 @media (max-width: 600px) {
     section{
-        margin-bottom:3036px;
+        margin-bottom:36px;
         padding-top: 24px;
     }
     p{
