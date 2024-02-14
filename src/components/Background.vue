@@ -22,7 +22,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('/attractions4.webp');
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('/background.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
