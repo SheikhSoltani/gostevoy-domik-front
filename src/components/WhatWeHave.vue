@@ -66,9 +66,6 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-section{
-  /* padding: 0 209px 0 348px; */
-}
 h4{
     font-family: Montserrat;
     font-size: 32px;
@@ -122,8 +119,6 @@ section>div>span>div>div>p{
     margin: 0 0 54px;
     width: 50%;
     font-style: italic;
-}
-section>div>span>div>p::after{
 }
 h2{
     color: #585858;

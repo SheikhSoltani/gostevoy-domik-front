@@ -71,9 +71,6 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-section{
-  /* padding: 0 209px 0 348px; */
-}
 section>div{
     position: relative;
     padding: 0 55% 0 0;

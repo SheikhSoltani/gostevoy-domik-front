@@ -132,7 +132,7 @@ const scrollTo = (index) => {
             </div>
             <div>
                 <img loading="lazy" src="/massage.svg" alt="img">
-                <a href="https://go.2gis.com/y24fe">roma.mitrofanov8787@gmail.com</a>
+                <a href="mailto:roma.mitrofanov8787@gmail.com">roma.mitrofanov8787@gmail.com</a>
             </div>
             <div>
                 <img loading="lazy" src="/phone.svg" alt="img">
