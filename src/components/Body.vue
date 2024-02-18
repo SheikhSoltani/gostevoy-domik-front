@@ -11,26 +11,46 @@ import Contacts from '@components/Contacts.vue'
 
 import { ref } from 'vue';
 const array = ref([
-  { img: '/service.webp' },
+  { img: '/image26.webp' },
   { img: '/image2.webp' },
   { img: '/image3.webp' },
   { img: '/image4.webp' },
+  { img: '/service.webp' },
   { img: '/image1_1.webp' },
   { img: '/image1_2.webp' },
   { img: '/image1_3.webp' },
   { img: '/image1_4.webp' },
   { img: '/image1_5.webp' },
   { img: '/image1_6.webp' },
+  { img: '/image1_7.webp' },
+  { img: '/image1_8.webp' },
+  { img: '/image1_9.webp' },
+  { img: '/image1_10.webp' },
+  { img: '/image1_11.webp' },
+  { img: '/image1_12.webp' },
+  { img: '/image1_13.webp' },
+  { img: '/image1_14.webp' },
+  { img: '/image1_15.webp' },
+  { img: '/image1_16.webp' },
+  { img: '/image1_17.webp' },
+  { img: '/image1_18.webp' },
+  { img: '/image1_19.webp' },
+  { img: '/image1_20.webp' },
+  { img: '/image1_21.webp' },
+  { img: '/image1_22.webp' },
+  { img: '/image1_23.webp' },
+  { img: '/image1_24.webp' },
+  { img: '/image1_25.webp' },
 ]);
 const array2 = ref([
+  { img: '/image62.webp' },
   { img: '/image5.webp' },
+  { img: '/image6.webp' },
   { img: '/image61.webp' },
   { img: '/image7.webp' },
-  { img: '/image8.webp' },
-  { img: '/image6.webp' },
+//  { img: '/image8.webp' },
 ]);
 const array3 = ref([
-  { img: '/image9.webp' },
   { img: '/image13.webp' },
   { img: '/image14.webp' },
   { img: '/image15.webp' },
@@ -42,9 +62,14 @@ const array3 = ref([
 ]);
 const array4 = ref([
   { img: '/attractions.webp',text:'Горнолыжный курорт Pioner' },
-  { img: '/attractions2.webp',text:'Горнолыжный курорт Oi-Qaragai' },
   { img: '/attractions3.webp',text:'Бутаковский водопад 3 км' },
+  { img: '/attractions2.webp',text:'Горнолыжный курорт Oi-Qaragai' },
   { img: '/attractions4.webp',text:'Пик Букреева 5 км' },
+  { img: '/attractions5.webp',text:'Панорама' },
+  { img: '/attractions6.webp',text:'Горные окрестности' },
+  { img: '/attractions7.webp',text:'Горные окрестности' },
+  { img: '/attractions8.webp',text:'Горные окрестности' },
+  { img: '/attractions9.webp',text:'Горные окрестности' },
 ]);
 </script>
 

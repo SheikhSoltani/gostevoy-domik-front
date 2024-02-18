@@ -102,7 +102,7 @@ h2{
 section>div{
     position: relative;
     width: 1810px;
-    height: 230px;
+    height: 260px;
     overflow: hidden;
 }
 section>div>div{
@@ -177,7 +177,7 @@ section>div>div>div::after {
     }
     section>div{
         width: 300px;
-        height: 130px;
+        height: 150px;
     }
     img{
         height: 24px;

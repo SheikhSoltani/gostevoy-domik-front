@@ -89,7 +89,7 @@ const scrollTo = (index) => {
             </div>
             <div>
                 <img loading="lazy" src="/massage.svg" alt="img">
-                <p>roma.mitrofanov8787@gmail.com</p>
+                <p>info@gostevoydomik.kz</p>
             </div>
             <div>
                 <img loading="lazy" src="/phone.svg" alt="img">
@@ -132,7 +132,7 @@ const scrollTo = (index) => {
             </div>
             <div>
                 <img loading="lazy" src="/massage.svg" alt="img">
-                <a href="mailto:roma.mitrofanov8787@gmail.com">roma.mitrofanov8787@gmail.com</a>
+                <a href="mailto:info@gostevoydomik.kz">info@gostevoydomik.kz</a>
             </div>
             <div>
                 <img loading="lazy" src="/phone.svg" alt="img">

@@ -9,12 +9,12 @@
         <titletwo>телефон * WHATSAPP * TELEGRAM</titletwo>
         <div>
             <number>+7 (701) 715-04-28</number>
-            <undernumber>Мария МИТРОФАНОВа</undernumber>
+            <undernumber>Мария</undernumber>
             <number>+7 (705) 447-26-36</number>
-            <undernumber>Роман МИТРОФАНОВ</undernumber>
+            <undernumber>Роман</undernumber>
         </div>
         <titletwo>E-mail</titletwo>
-        <email>roma.mitrofanov8787@gmail.com</email>
+        <email>info@gostevoydomik.kz</email>
         <a href="https://wa.me/77054472636">Связаться</a>
     </section>
 </template>

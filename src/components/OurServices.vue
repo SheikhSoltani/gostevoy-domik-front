@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service3.webp')`,
+                <div  :style="{background: `url('/service2.webp')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div>
-                <div  :style="{background: `url('/service2.webp')`,
+                <div  :style="{background: `url('/service3.webp')`,
                     'background-position': 'center',
                     'background-size': 'cover',
                     'background-repeat': 'no-repeat',}">
