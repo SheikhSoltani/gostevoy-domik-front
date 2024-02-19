@@ -48,7 +48,8 @@ const array2 = ref([
   { img: '/image6.webp' },
   { img: '/image61.webp' },
   { img: '/image7.webp' },
-//  { img: '/image8.webp' },
+  { img: '/image8.webp' },
+  { img: '/image9.webp' },
 ]);
 const array3 = ref([
   { img: '/image13.webp' },
