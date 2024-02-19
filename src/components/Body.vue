@@ -11,11 +11,6 @@ import Contacts from '@components/Contacts.vue'
 
 import { ref } from 'vue';
 const array = ref([
-  { img: '/image26.webp' },
-  { img: '/image2.webp' },
-  { img: '/image3.webp' },
-  { img: '/image4.webp' },
-  { img: '/service.webp' },
   { img: '/image1_1.webp' },
   { img: '/image1_2.webp' },
   { img: '/image1_3.webp' },
@@ -40,16 +35,21 @@ const array = ref([
   { img: '/image1_22.webp' },
   { img: '/image1_23.webp' },
   { img: '/image1_24.webp' },
-  { img: '/image1_25.webp' },
 ]);
 const array2 = ref([
-  { img: '/image62.webp' },
   { img: '/image5.webp' },
-  { img: '/image6.webp' },
   { img: '/image61.webp' },
   { img: '/image7.webp' },
-  { img: '/image8.webp' },
+  { img: '/image69.webp' },
+  //{ img: '/image6.webp' },
+  { img: '/image68.webp' },
+  { img: '/image63.webp' },
+  { img: '/image66.webp' },
+  { img: '/image67.webp' },
+  { img: '/image62.webp' },
   { img: '/image9.webp' },
+  { img: '/image8.webp' },
+  { img: '/image65.webp' },
 ]);
 const array3 = ref([
   { img: '/image13.webp' },
@@ -63,14 +63,12 @@ const array3 = ref([
 ]);
 const array4 = ref([
   { img: '/attractions.webp',text:'Горнолыжный курорт Pioner' },
-  { img: '/attractions3.webp',text:'Бутаковский водопад 3 км' },
-  { img: '/attractions2.webp',text:'Горнолыжный курорт Oi-Qaragai' },
   { img: '/attractions4.webp',text:'Пик Букреева 5 км' },
+  { img: '/attractions2.webp',text:'Горнолыжный курорт Oi-Qaragai' },
+  { img: '/attractions3.webp',text:'Бутаковский водопад 3 км' },
   { img: '/attractions5.webp',text:'Панорама' },
   { img: '/attractions6.webp',text:'Горные окрестности' },
   { img: '/attractions7.webp',text:'Горные окрестности' },
-  { img: '/attractions8.webp',text:'Горные окрестности' },
-  { img: '/attractions9.webp',text:'Горные окрестности' },
 ]);
 </script>
 
